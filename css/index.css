@@ -1,0 +1,143 @@
+/*header style begin*/
+header .top{
+	width: 1215px;
+	height: 99px;
+	margin: 0 auto;
+}
+header .top-left img{
+    widows: 40px;
+    height: 40px;
+    float: left;
+    padding-top: 30px;
+    padding-right: 253px;
+}
+header .top .top-center{
+    float: left;
+    /*padding-left: 206px;*/
+    position: relative;
+    height: 99px;
+}
+header .top-center li{
+	list-style: none;
+	float: left;
+	line-height: 99px;
+	padding-right: 45px;
+}
+header .top-center li a{
+	color: #c8c8c8;
+	font-size: 14px;
+	text-decoration: none;
+}
+header .top .top-center ul li a hover:{
+	color: white;
+}
+header .top .top-center span{
+	color: rgb(51,51,51);
+	float: left;
+	display: inline-block;
+	line-height: 99px;
+}
+/*header .top .top-right {
+	background-image: url(../image/gouwuche.png);
+	background-repeat: no-repeat;
+	float: right;
+	margin-top: 39px;
+	display: inline-block;
+	margin-left: 20px;
+}*/
+header .top .top-right a nth-child(1){
+	display: inline-block;
+	padding-top: 40px;
+	padding-left: 100px;
+}header .top .top-right a nth-child(2){
+	display: inline-block;
+	padding-top: 40px;
+	padding-left: 20px;
+}
+header .top .top-right img{
+	float: right;
+	color: rgb(153,153,153);
+}
+header .top .top-right span{
+	float: right;
+	color: rgb(153,153,153);
+	display: inline-block;
+	padding-top: 40px;
+}
+header .top .top-right img:nth-child(2){
+	margin-left: 40px;
+}
+header .top .top-right a:hover{
+    color: white;
+}
+header .top .top-center li a:hover{
+	color: white;
+}
+/*header style end*/
+/*div nav begin*/
+.top2{
+	background-color: rgb(237,237,237);
+}
+.nav{
+	width: 1217px;
+	height: 94px;
+	margin: 0 auto;
+}
+.nav ul{
+	padding-left: 9px;
+}
+.nav ul li{
+	list-style: none;
+	float: left;
+}
+.nav ul li a{
+	text-decoration: none;
+	float: left;
+	color: rgb(102,102,102);
+	font-size: 14px;
+	padding-top: 40px;
+}
+.nav ul li span{
+	float: left;
+	padding-top: 35px;
+	color: rgb(102,102,102);
+	padding-left: 21px;
+	padding-right: 21px;
+}
+.top2 .nav li a:hover{
+	color: rgb(112,150,243);
+}
+.top2 .nav li:nth-child(2):hover .hot li{
+	opacity: 1;
+	transform: translateY(200px);
+	background-color: white;
+}
+.top2 .nav .hot li{
+	/*width: 1217px;
+	height: 378px;*/
+	list-style: none;
+	font-size: 14px;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+section{
+	background-color:rgb(237,237,237);
+}
+section .main{
+	background: orange;
+	height: 7583px;
+	width: 1220px;
+	margin: 0 auto;
+}
+section .main div{
+	width: 1220px;
+	height: 520px;
+}
+footer{
+	background-color: blue;
+	height: 188px;
+}
+.bottom{
+	background-color: green;
+	height: 96px;
+}
