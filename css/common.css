@@ -12,13 +12,20 @@
     *{
     	box-sizing: border-box;
     }
-    body{
-    	background: #ededed;
+    .top{
+        background: #1a1a1a;
+    }
+    .body{
+    	background: #666;
     }
     .contain{
     	width: 1220px;
     	margin-left: auto;
     	margin-right: auto;
+    }
+    .container{
+        border: 1px solid rgba(0,0,0,.14);
+        border-radius: 8px;
     }
     a{
     	font-size: 14px;
