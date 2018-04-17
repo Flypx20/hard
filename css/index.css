@@ -21,15 +21,14 @@ body{
 	float: left;
 	margin-left: 256px;
 	height: 98px;
-	padding-top: 40px;
 	position: absolute;
+	line-height: 98px;
 }
 .top .nav li{
 	float: left;
 	margin-right: 48px;
-	position: relative;
 	list-style: none;
-	top:-20px;
+	line-height: 98px;
 }
 .top .nav li:nth-child(8){
 	margin-right: 0px;
@@ -45,17 +44,12 @@ body{
 }
 .top .topr{
 	float: right;
-	/*width: 98px;*/
 	height: 98px;
-	/*line-height: 98px;*/
-	/*position: absolute;*/
 }
 .top .topr a{
 	text-decoration: none;
 	color: #c8c8c8;
-	position: relative;
-	top: 20px;
-
+	line-height: 98px;
 }
 .top .topr a:nth-child(1){
     margin-right: 50px; 
@@ -69,6 +63,11 @@ body{
 	height: 94px;
 	margin: 0 auto;
 	background-color:#ededed;
+}
+.headert{
+	width: 1216px;
+	height: 94px;
+	margin: 0 auto;
 }
 .header .headert li{
 	list-style: none;
@@ -168,8 +167,6 @@ body{
 	font-size: 22px;
 }
 .maint1rb span:nth-child(2){
-	color: #999999;
-	font-size: 18px;
 	display: block;
 	width: 146px;
 	height: 48px;
@@ -180,9 +177,16 @@ body{
 	margin-left: : 22px;
 	border-radius: 10px/10px;
 }
-.maint1rb span:nth-child(3){
+.maint1rb .buy1 a{
 	color: white;
-	font-size: 18px;
+}
+.maint1rb .buy2 a{
+	color: #999999;
+}
+.maint1rb .buy1 a,.maint1rb .buy2 a{
+	font-size: 16px;
+}
+.maint1rb span:nth-child(3){
 	background-color:#6e94f3; 
 	width: 146px;
 	height: 48px;
@@ -194,8 +198,11 @@ body{
 	border: 1px solid #6e94f3;
 	border-radius: 10px/10px;
 }
-.maint1rb span:nth-child(3) hover{
-	background-color: #102454;
+.maint1rb span:nth-child(3):hover{
+	background: #6272c6;
+}
+.maint1rb span:nth-child(2):hover{
+	background: #d7dae9;
 }
 /*main end*/
 /*footer begin*/
