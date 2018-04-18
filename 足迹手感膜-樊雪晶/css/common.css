@@ -13,9 +13,9 @@
     *{
     	box-sizing: border-box;
     }
-/*    .top{
+    .top{
         background: #1a1a1a;
-    }*/
+    }
     .body{
     	background: #ededed;
     }
@@ -24,10 +24,10 @@
     	margin-left: auto;
     	margin-right: auto;
     }
-/*    .container{
+    .container{
         border: 1px solid #ccc;
         border-radius: 10px; 
-    }*/
+    }
     a{
     	font-size: 14px;
     	text-decoration: none;
@@ -36,7 +36,8 @@
     a:hover{
     	cursor: pointer;
     }
-/*header{
+=======
+header{
 	background-color: black;
 }
-*/
+>>>>>>> 8ff9d0cf402bf7505ae5bf94d838ed6227ada8d2
