@@ -149,6 +149,7 @@
 			position: absolute;
 			opacity: 1;
 			transition: all 0.5s;
+			z-index: 9;
 		}
 		.body .huadong .bianqian2{
 			width: 1223px;
@@ -248,6 +249,7 @@
 			margin: 15px auto;
 			overflow: hidden;
 		}
+		/*lianjie*/
 		.lianjie1{
 			width: 306px;
 			height: 400px;
