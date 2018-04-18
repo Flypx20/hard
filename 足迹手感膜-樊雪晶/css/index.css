@@ -336,4 +336,15 @@ body{
 	/*width: 446px;
 	height: 100%;*/
 }
+.hui{
+	width: 47px;
+	height: 47px;
+	border: 2px solid #e8e8e8;
+	float: right;
+	border-radius: 5px/5px;
+}
+.hui img{
+	margin-left: 17px;
+	margin-top: 17px;
+}
 /*bottom end*/
