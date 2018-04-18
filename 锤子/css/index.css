@@ -9,7 +9,8 @@ body{
             display: block;  
             content:'';  
             clear: both;  
-            height:0;  
+            height:0;
+ 
         }  
 a{
 	text-decoration: none;
@@ -31,11 +32,12 @@ body{
 .top{
 	height: 100px;
     background-color: #0b0b0b;
-
-}
+    min-width: 1220px;
+   }
 .top .nav a:hover{
     color: #fff;
 }
+
 .top .logo{
 	float: left;
 	width: 43px;
@@ -51,7 +53,7 @@ body{
 }
 .top .nav li{
 	float: left;
-	margin-right: 50px;
+	margin-right: 60px;
 	
 	line-height: 100px;
     list-style: none;
@@ -177,22 +179,23 @@ body{
 	color: #333;
 	margin-bottom: 15px;
 }
-.good span{
-	width: 10px;
-	height: 10px;
-	border:1px solid #999;
+.good .img-box{
+	width: 8px;
+	height: 8px;
+	border:2px solid #999;
 	border-radius: 50%;
 	display:inline-block;
 	margin-top: 15px;
-	margin-right: 10px;、
 	padding: 2px;
-}
-.good span img {
+	margin-right: 10px;
+	line-height: 4px;
+	}
+.good .img-box img {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	display: inline-block
-}
+	margin:0;
+	}
 .good h2{
 	margin-top: 15px;
 	color: #d44d44;
@@ -237,7 +240,7 @@ body{
 	height: 354px;
 	background-color: #fafafa;
 	margin-top: 28px;
-	
+	min-width: 1220px;
 }
 .bottom .siteinfo{
 
