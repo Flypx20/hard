@@ -93,7 +93,7 @@
 			position: fixed;
 			margin-top: 88px;
 			/*margin-left: 110px;*/
-			z-index: 9;
+			z-index: 999;
 			overflow: hidden;
 			opacity: 0;
 			transition: all 1s;
@@ -481,6 +481,7 @@
 		.footer .yejiao2 .box6 a{
 			font-size: 12px;
 			color: #5079d9;
+			cursor: pointer;
 		}
 		.footer .yejiao2 .box7 span{
 			font-size: 14px;
