@@ -2,6 +2,7 @@
 .top{
 	background: #000;
 	width: 100%;
+	min-width：1220px;
 }
 .top .logo{
 	height: 100px;
@@ -71,6 +72,31 @@
 .nav .contain li a:hover{
 	color: #5079d9;
 }
+#shouJ>div{
+	width: 200px;
+	height: 330px;
+	text-align: center;
+	background: #fff;
+	float: left;
+	margin-top: 20px;
+}
+#shouJ div img{
+	width: 100%;
+}
+#shouJ div> .xiaozi{
+	margin-top: 50px;
+	font-size: 14px;
+	color: #989898;
+}
+#shouJ div>p:last-child{
+	margin-top: 30px;
+	font-size: 14px;
+	color: #d44d44;
+	font-weight:900;
+}
+#shouJ div:first-child{
+	margin-left: 310px;
+}
 /*分类*/
 .fenlei .contain li{
 	float: left;
@@ -94,6 +120,33 @@
 }
 
 /*主体*/
+.yincang {
+	width: 100%;
+	height: 30px;
+	display: none;
+}
+.yincang span{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	background: #fff;
+	color: #b0b0b0;
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	margin-left: -50px;
+	/*z-index: 12;*/
+}
+.yincang span:hover{
+	background: #ccc;
+	color: #000;
+}
 .zhuti .contain .diyihang{
 	width: 100%;
 	height: 430px;
@@ -122,10 +175,26 @@
 	margin:0;
 	position: relative;
 	background: #fff;
+	transition: all 0.5s;
 }
 .zhuti .contain .diyihang>li:hover,
 .zhuti .contain .dierhang>li:hover{
-	box-shadow: 1px 1px 1px 1px #eee inset;
+	box-shadow: 1px 1px 1px 3px #eee inset;
+}
+.zhuti .contain .diyihang>li:hover .jiage,
+.zhuti .contain .dierhang>li:hover .jiage{
+	display: none;
+}
+.zhuti .contain .diyihang>li:hover .yincang,
+.zhuti .contain .dierhang>li:hover .yincang{
+	position: absolute;
+	bottom: 52px;
+	display: block;
+}
+.zhuti .contain .diyihang .dierge .biaoqian{
+	background: #fffbdf;
+	color:#a06e37;
+	border-color: #d5b480;
 }
 .zhuti .contain .diyihang li.biaoqian,
 .zhuti .contain .dierhang li.biaoqian{
@@ -134,7 +203,7 @@
 	right: 20px;
 	width: 45px;
 	height: 20px;
-	line-height: 20px;
+	line-height: 18px;
 	text-align: center;
 	background: #ffe7e5;
 	border: 1px solid #f3938b;
