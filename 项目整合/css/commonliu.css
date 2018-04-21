@@ -1,4 +1,4 @@
-
+/*刘向明*/
 /*通用样式*/
     .clearfix:after{
         content: "";
@@ -13,10 +13,13 @@
     *{
     	box-sizing: border-box;
     }
+    body{
+
+    }
     .top{
         background: #1a1a1a;
     }
-    .body{
+    body{
     	background: #ededed;
     }
     .contain{

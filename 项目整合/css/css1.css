@@ -1,4 +1,5 @@
-﻿/*顶部内容*/
+﻿/*刘向明*/
+/*顶部内容*/
 .top{
 	background: #000;
 	width: 100%;
@@ -71,6 +72,15 @@
 }
 .nav .contain li a:hover{
 	color: #5079d9;
+}
+#shouJ{
+	position: absolute;
+	top: 210px;
+	z-index: 999;
+	background: rgba(255,255,255,0.5);
+}
+.nav1{
+
 }
 #shouJ>div{
 	width: 200px;
