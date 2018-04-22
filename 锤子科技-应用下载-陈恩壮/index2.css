@@ -1,0 +1,75 @@
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			background:rgb(229,229,229);
+		}
+		.clearfix:after{
+			content: '';
+			clear: both;
+			display: block;
+			height: 0px;
+			visibility: hidden;
+		}
+		/*头部*/
+		header{
+			width: 100%;
+			height: 100px;
+			background: black;
+			overflow: hidden;
+		}
+		header .logo,header div img{
+			height: 50px;
+			width: 50px;
+		}
+		.container{
+			width: 1224px;
+			height: 100px;
+			margin: 0px auto;
+			background-color: yellow;
+		}
+		.logo{
+			margin-top: 25px;
+			/*margin-left: 110px;*/
+			float: left;
+		}
+		.caidan,ul{
+			/*width: 1080px;*/
+			height: 100px;
+			background: red;
+		}
+		.caidan{
+			float: right;
+			/*margin-right: 110px;*/
+			/*margin-top: 35px;*/
+		}
+		.container .caidan li{
+			list-style: none;
+			
+			/*width: 120px;*/
+			height: 30px;
+			margin-left: 40px;
+			line-height: 100px;
+			float: left;
+		}
+		.container .caidan li a{
+			text-decoration: none;
+			color: #c8c8c8;
+			text-align: center;
+			font-size: 16px;
+		}
+		.caidan li a:hover{
+			color: #fff;
+		}
+		.caidan li .box0{
+			width: 25px;
+			height: 25px;
+			background-color: gray;
+			display: inline-block;
+			/*vertical-align: middle;
+			margin-top: 10px;*/
+			line-height: 25px;
+			text-align: center;
+			border-radius: 50%;
+		}
