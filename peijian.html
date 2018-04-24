@@ -5,6 +5,52 @@
 	<title>官方配件</title>
 	<link rel="stylesheet" href="css/index3.css">
 	<link href="css/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+	<script>
+		function animation(obj,attr,iTarget){
+			clearInterval(obj.timer);
+			obj.timer = setInterval(function(){
+				var iSpeed = 0;
+				
+				var curr = parseFloat(getComputedStyle(obj,false)[attr]);
+				if(attr == 'opacity'){
+					curr = curr * 100;
+				}
+				if(curr > iTarget){
+					iSpeed = -50;
+				}else{
+					iSpeed = 50;
+				}
+				if(Math.abs(iTarget - curr) <= Math.abs(iSpeed)){
+					clearInterval(obj.timer);
+					if(attr == 'opacity'){
+						obj.style[attr] = iTarget / 100;
+					}else{
+						obj.style[attr] = iTarget + 'px';	
+					}
+					
+				}else{
+					if(attr == 'opacity'){
+						obj.style[attr] = (curr + iSpeed)/100; 
+					}else{
+						obj.style[attr] = curr + iSpeed + 'px';	
+					}
+				}
+			},10)
+		}		
+		window.onresize = window.onscroll = window.onload = function(){
+			var oDiv = document.getElementById('box');
+			
+			var iTop = document.body.scrollTop || document.documentElement.scrollTop;
+			if (iTop>100) {
+				oDiv.style.display='block';
+			}else{
+				oDiv.style.display='none';
+			}
+			var iTarget = iTop;
+
+			animation(oDiv,'top',iTarget);
+		}
+	</script>
 </head>
 <body>
 	<div class="top clearfix">
@@ -34,7 +80,7 @@
 		</div>
 		
 	</div>
-	<div class="header  clearfix">
+	<div class="header  clearfix" style="">
 		<div class="container">
 		   <ul>
 			     <li><a href="#">首页</a></li>
@@ -48,6 +94,38 @@
 			     <li><a href="#">服务</a></li>
 			     <li><a href="#">企业团购</a></li>
 		    </ul>
+
+	    </div>
+	</div>
+	<div class="header  clearfix" style="display: none; z-index: 21; position: absolute;background: #f7f7f7; width: 100%;" id="box">
+		<div class="container">
+		   <ul>
+			     <li><a href="#">首页</a></li>
+			      <li><a href="#">手机</a></li>
+			     <li><a href="#">“足迹”手感膜</a></li>
+			     <li><a href="#">官方配件</a></li>
+			     <li><a href="#">空气净化类</a></li>
+			     <li><a href="#">品牌周边</a></li>
+			     <li><a href="#">第三方商品</a></li>
+			     <li><a href="#">全部</a></li>
+			     <li><a href="#">服务</a></li>
+			     <li><a href="#">企业团购</a></li>
+		    </ul>
+		   <div class="cart " style="float: right;right: 100px;">
+				<a href="#">
+					<i class="fas fa-user" style="margin-right: 20px"></i>
+				    <i class="fas fa-shopping-cart"></i>
+					<div style="display:inline-block;
+	line-height: 20px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+    background-color: #999;">0</div>
+				</a>
+			</div>
 	    </div>
 	</div>
 	<div class="check">
