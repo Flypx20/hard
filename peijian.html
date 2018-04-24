@@ -16,9 +16,9 @@
 					curr = curr * 100;
 				}
 				if(curr > iTarget){
-					iSpeed = -50;
+					iSpeed = -80;
 				}else{
-					iSpeed = 50;
+					iSpeed = 80;
 				}
 				if(Math.abs(iTarget - curr) <= Math.abs(iSpeed)){
 					clearInterval(obj.timer);
@@ -35,7 +35,7 @@
 						obj.style[attr] = curr + iSpeed + 'px';	
 					}
 				}
-			},10)
+			},30)
 		}		
 		window.onresize = window.onscroll = window.onload = function(){
 			var oDiv = document.getElementById('box');
@@ -113,7 +113,7 @@
 		    </ul>
 		   <div class="cart " style="float: right;right: 100px;">
 				<a href="#">
-					<i class="fas fa-user" style="margin-right: 20px"></i>
+					<i class="fas fa-user" style="margin-right: 30px"></i>
 				    <i class="fas fa-shopping-cart"></i>
 					<div style="display:inline-block;
 	line-height: 20px;
@@ -145,6 +145,7 @@
 					<p>质感精良、完美贴合、周到防护</p>
 					<div class="img-box"><img src="images/1.jpg"></div>
 					<h2>¥ 79.00</h2>
+					<div id="div" style="">查看详情</div>
 				</a>
 			</li>
 			<li><a href="#">
@@ -167,6 +168,7 @@
 					<p>质感精良、完美贴合、周到防护</p>
 					<div class="img-box"><img src="images/1.jpg"></div>
 					<h2>¥ 79.00</h2>
+
 				</a></li>
 			<li><a href="#">
 					<div class="img"><img src="images/5.webp"></div>

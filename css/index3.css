@@ -167,6 +167,7 @@ body{
 	border-right:  1px solid #dcdcdc;
 	border-bottom: 1px solid #dcdcdc;
 	text-align: center;
+	position: relative;
 }
 .good li img{
 	width: 216px;
@@ -202,6 +203,27 @@ body{
 }
 .good li:hover{
 	box-shadow: 2px 2px 10px 10px #f5f5f5 inset;
+
+}
+#div{
+	display: none;
+	width: 120px;
+	height: 40px;
+	z-index: 2;
+	line-height: 40px;
+	position: absolute;
+	border: 1px solid #f5f5f5;
+	bottom: 50px;
+	left: 85px;
+	border-radius: 10px;
+	background: #fff;
+	color: #646464;
+}
+#div:hover{
+	background-color:gray;
+}
+.good li:hover #div{
+     display: block;
 }
 .help{
 	width: 1220px;
