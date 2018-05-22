@@ -60,7 +60,7 @@ body{
 }
 /*header begin*/
 .header{
-	width: 1216px;
+	width: 100%;
 	height: 94px;
 	margin: 0 auto;
 	background-color:#ededed;
@@ -89,6 +89,39 @@ body{
 	padding-right: 21px;
 }
 .header .headert li a:hover{
+	color: rgb(112,150,243);
+}
+.top-header{
+	width: 100%;
+	height: 0px;
+	position: fixed;
+	background-color:#ededed;
+	overflow: hidden;
+	box-shadow: 0 2px 2px #ccc;
+}
+.top-header .headert{
+	height: 60px;
+	margin: 0 auto;
+}
+.top-header .headert li{
+	list-style: none;
+	float: left;
+}
+.top-header .headert li a{
+	text-decoration: none;
+	float: left;
+	color: rgb(102,102,102);
+	font-size: 14px;
+	padding-top: 23px;
+}
+.top-header .headert li span{
+	float: left;
+	padding-top: 18px;
+	color: #bdbdbd;
+	padding-left: 21px;
+	padding-right: 21px;
+}
+.top-header .headert li a:hover{
 	color: rgb(112,150,243);
 }
 /*header end*/
