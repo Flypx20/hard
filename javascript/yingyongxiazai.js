@@ -40,3 +40,33 @@ function handleCarousel(){
 		playDuration:3000		
 	})
 }
+handleLieBiao();
+function handleLieBiao(){
+	var oDownList=document.getElementById('down-list');
+	var oList=document.querySelector('.xialakuang');
+	var oBox=document.querySelector('.xialakuang-box');
+	var timer=null;
+
+	oDownList.onmouseenter=function(){
+		timer=setTimeout(function(){
+			oBox.style.borderTop='1px solid #ccc';
+			animation(oList,{height:300},false);
+		},30)
+		
+	}
+	oList.onmouseenter=function(){
+		clearTimeout(timer);
+	}
+	oDownList.onmouseleave=function(){
+		timer=setTimeout(function(){
+			oBox.style.borderTop='';
+			animation(oList,{height:0},false);
+		},30)
+	}
+	oList.onmouseleave=function(){
+		timer=setTimeout(function(){
+			oBox.style.borderTop='';
+			animation(oList,{height:0},false);
+		},30)
+	}
+}
