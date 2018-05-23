@@ -93,10 +93,10 @@
 		.container .cart-box p{
 			margin-top: 10px;
 		}
-		.container .cart-box p:first-child{
-			font-size: 20px;
+		.container .cart-box p:nth-child(2){
+			font-size: 18px;
 		}
-		.container .cart-box p:last-child{
+		.container .cart-box p:nth-child(3){
 			font-size: 14px;
 			color: #ccc;
 		}
@@ -142,34 +142,38 @@
 			text-decoration: none;
 			color: gray;
 		}
-		.daohang .xialakuang{
-			width: 1218px;
+		.xialakuang{
+			width: 100%;
 			height: 0px;
-			border-top: 1px solid gray;
+			/*height: 300px;*/
+			/*border-top: 1px solid gray;*/
 			background: white;
-			/*position: relative;*/
-			/*margin: 0px auto;*/
-			position: fixed;
+			/*background: green;*/
+			position: absolute;
+			top: 100px;
 			margin-top: 88px;
-			/*margin-left: 110px;*/
 			z-index: 999;
 			overflow: hidden;
-			opacity: 0;
-			transition: all 1s;
 		}
-		.daohang div:nth-child(8):hover ~ .xialakuang{
-			opacity:1;
-			height: 400px;
+		.xialakuang .xialakuang-box{
+			width: 1224px;
+			height: 300px;
+			margin: 0 auto;
+			background-color:white;
+			overflow: hidden;
 		}
-		.daohang .xialakuang .tupian{
+		.xialakuang .tupian{
 			width: 600px;
 			height: 100px;
-			margin: 150px auto;
+			margin: 100px auto;
 		}
-		.daohang .xialakuang .tupian img{
+		.xialakuang .tupian img{
 			width: 76px;
 			height: 102px;
 			margin-left: 100px;
+		}
+		.xialakuang .tupian img:hover{
+			cursor: pointer;
 		}
 		/*身体*/
 		.body{
