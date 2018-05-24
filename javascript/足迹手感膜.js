@@ -33,8 +33,6 @@ window.onscroll=function(){
 		if(!isShow){
 			animation(oDiv,'height',60);
 			isShow=true;
-			// oDiv.style.borderBottom="1px solid #ccc";
-			// oDiv.style.boxShdow="0px 2px 2px #ccc";
 		}
 	}else{
 		if(isShow){
