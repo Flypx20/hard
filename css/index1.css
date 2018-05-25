@@ -2,66 +2,6 @@ body{
 	background-color: #ededed;
 	min-width: 1216px;
 }
-.headert{
-	width: 1216px;
-	height: 94px;
-	margin: 0 auto;
-}
-.header .headert li{
-	list-style: none;
-	float: left;
-}
-.header .headert li a{
-	text-decoration: none;
-	float: left;
-	color: rgb(102,102,102);
-	font-size: 14px;
-	padding-top: 40px;
-}
-.header .headert li span{
-	float: left;
-	padding-top: 35px;
-	color: #bdbdbd;
-	padding-left: 21px;
-	padding-right: 21px;
-}
-.header .headert li a:hover{
-	color: rgb(112,150,243);
-}
-/*下拉滑动栏*/
-.top-header{
-	width: 100%;
-	height: 0px;
-	position: fixed;
-	background-color:#ededed;
-	overflow: hidden;
-	box-shadow: 0 2px 2px #ccc;
-}
-.top-header .headert{
-	height: 60px;
-	margin: 0 auto;
-}
-.top-header .headert li{
-	list-style: none;
-	float: left;
-}
-.top-header .headert li a{
-	text-decoration: none;
-	float: left;
-	color: rgb(102,102,102);
-	font-size: 14px;
-	padding-top: 23px;
-}
-.top-header .headert li span{
-	float: left;
-	padding-top: 18px;
-	color: #bdbdbd;
-	padding-left: 21px;
-	padding-right: 21px;
-}
-.top-header .headert li a:hover{
-	color: rgb(112,150,243);
-}
 /*top begin*/
 .top{
 	width: 100%;
@@ -72,6 +12,7 @@ body{
 	width: 1216px;
 	height: 100%;
 	margin: 0 auto;
+	position: relative;
 }
 .top0 .logo{
 	float: left;
@@ -118,12 +59,53 @@ body{
 .top li:hover a{
 	color: white;
 }
+/*购物车*/
+.divb{
+	width: 350px;
+	height: 350px;
+	border:1px solid #ccc;
+	background: #ffffff;
+	position: absolute;
+	top: 70px;
+	right: 0px;
+	z-index: 99;
+	border-radius: 10px/10px;
+	display: none;
+}
+.divb .divs{
+	background:  #ffffff;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top:-5px;
+	left: 310px;
+	transform: rotateZ(45deg);
+}
+.divb img{
+	position: absolute;
+	top: 110px;
+	left: 110px;
+}
+.divb .p1{
+	font-size: 18px;
+	text-align: center;
+	position: absolute;
+	top:200px;
+	left: 120px;
+}
+.divb .p2{
+	font-size: 12px;
+	position: absolute;
+	top: 225px;
+	left: 45px;
+}
 /*header begin*/
 .header{
-	width: 1216px;
+	width: 100%;
 	height: 94px;
 	margin: 0 auto;
 	background-color:#ededed;
+	
 }
 .headert{
 	width: 1216px;
@@ -152,6 +134,15 @@ body{
 .header .headert li a:hover{
 	color: rgb(112,150,243);
 }
+.top-header{
+	width: 100%;
+	height: 0px;
+	position: fixed;
+	background-color:#ededed;
+	overflow: hidden;
+	box-shadow: 0 2px 2px #ccc;
+}
+/*搜索*/
 .header .sou input{
 	width: 260px;
 	height: 30px;
@@ -164,7 +155,8 @@ body{
 .souList{
 	width: 280px;
 	height: 94px;
-	position: relative;
+	position: absolute;
+	right: 0px;
 }
 .souList .li1{
 	border:1px solid #93b2f7;
@@ -193,6 +185,68 @@ body{
 	position: absolute;
 	right: 3px;
 	top: 40px;
+}
+/*搜索end*/
+.top-header .headert{
+	height: 60px;
+	margin: 0 auto;
+}
+.top-header .headert li{
+	list-style: none;
+	float: left;
+}
+.top-header .headert li a{
+	text-decoration: none;
+	float: left;
+	color: rgb(102,102,102);
+	font-size: 14px;
+	padding-top: 23px;
+}
+.top-header .headert li span{
+	float: left;
+	padding-top: 18px;
+	color: #bdbdbd;
+	padding-left: 21px;
+	padding-right: 21px;
+}
+.top-header .headert li a:hover{
+	color: rgb(112,150,243);
+}
+/*下拉列表*/
+.headerList{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	background: #fff;
+	text-align: center;
+	font-size: 14px;
+	display: none;
+}
+.headerList .p1{
+	color: #ccc;
+}
+.headerList .p2{
+	color:red;
+	font-weight: bolder;
+}
+.headerList .ulList{
+	width: 1216px;
+	height: 300px;
+	margin:0 auto;
+}
+.headerList img{
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+.headerList li{
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-top: 50px;
+	width: 150px;
+	height: 150px;
+	float: left;
+	border-right: 1px solid #ccc;
 }
 /*header end*/
 /*main beign*/
