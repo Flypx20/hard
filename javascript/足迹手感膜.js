@@ -34,8 +34,6 @@ window.onscroll=function(){
 		if(!isShow){
 			animation(oDiv,'height',60);
 			isShow=true;
-			// oDiv.style.borderBottom="1px solid #ccc";
-			// oDiv.style.boxShdow="0px 2px 2px #ccc";
 		}
 	}else{
 		if(isShow){
@@ -57,7 +55,7 @@ function gouWu(){
 	oGouW.onmouseleave=function(){
 		timer=setTimeout(function(){
 			oGouB.style.display='none';
-		},300)
+		},500)
 	}
 	oGouB.onmouseenter=function(){
 		clearTimeout(timer);
@@ -86,5 +84,24 @@ function headerList1(){
 	}
 	oHeaderList.onmouseleave=function(){
 		oHeaderList.style.display="none";
+	}
+}
+foundList();
+// 搜索框
+function foundList(){
+	var oInput=document.getElementById('txt');
+	var oSli1=document.getElementById('sli1');
+	var oSli2=document.getElementById('sli2');
+	var oSl=document.getElementById('sL');
+	oInput.onfocus=function(){
+		oSli1.style.display="none";
+		oSli2.style.display="none";
+		oSl.style.display="block";
+
+	}
+	oInput.onblur=function(){
+		oSli1.style.display="block";
+		oSli2.style.display="block";
+		oSl.style.display="none";
 	}
 }
