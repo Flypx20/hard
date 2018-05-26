@@ -5,54 +5,36 @@
 	<title>官方配件</title>
 	<link rel="stylesheet" href="css/index3.css">
 	<link href="css/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
-	<script>
-		function animation(obj,attr,iTarget){
-			clearInterval(obj.timer);
-			obj.timer = setInterval(function(){
-				var iSpeed = 0;
-				
-				var curr = parseFloat(getComputedStyle(obj,false)[attr]);
-				if(attr == 'opacity'){
-					curr = curr * 100;
-				}
-				if(curr > iTarget){
-					iSpeed = -80;
-				}else{
-					iSpeed = 80;
-				}
-				if(Math.abs(iTarget - curr) <= Math.abs(iSpeed)){
-					clearInterval(obj.timer);
-					if(attr == 'opacity'){
-						obj.style[attr] = iTarget / 100;
-					}else{
-						obj.style[attr] = iTarget + 'px';	
-					}
-					
-				}else{
-					if(attr == 'opacity'){
-						obj.style[attr] = (curr + iSpeed)/100; 
-					}else{
-						obj.style[attr] = curr + iSpeed + 'px';	
-					}
-				}
-			},30)
-		}		
-		window.onresize = window.onscroll = window.onload = function(){
-			var oDiv = document.getElementById('box');
-			
-			var iTop = document.body.scrollTop || document.documentElement.scrollTop;
-			if (iTop>100) {
-				oDiv.style.display='block';
-			}else{
-				oDiv.style.display='none';
-			}
-			var iTarget = iTop;
-
-			animation(oDiv,'top',iTarget);
-		}
-	</script>
 </head>
 <body>
+	<div class="flow"></div>
+	<div class="table">
+		<div class="title">
+			<h4>企业团购</h4>
+		</div>
+		<div class="require">
+			<ul class="request">
+				<li><h6>企业团购要求：</h6></li>
+				<li>1.必须是企事业团体单位</li>
+				<li>2.能提供有效的营业执照等资质证明</li>
+			</ul>
+		</div>
+		<div class="surply">
+			<ul class="step">
+				<li><h6>团购申请步骤：</h6></li>
+				<li>1.下载填写《锤子科技企业客户采购申请表》</li>
+				<li>2.将填写完整的申请表及企业营业执照扫描件，以邮件方式发送到：tuangou@smartisan.com</li>
+				<li>3.我们在收到您的申请后，1-2 个工作日内与您取得联系，核对沟通采购事宜</li>
+			</ul>
+		</div>
+		<div class="contact">
+			<p>咨询电话：400-668-5588（工作日 9:00-18:00）</p>
+		</div>
+		<div class="btn">
+			<input type="button" name="" value="取消">
+			<input type="button" name="" value="下载">
+		</div>
+	</div>
 	<div class="top clearfix">
 		
 		<div class="container ">
@@ -67,7 +49,8 @@
 			    	<li><a href="#">Smartisan OS</a></li>
 			    	<li><a href="#">欢喜云</a></li>
 			    	<li><a href="#">应用下载</a></li>
-			    	<li><a href="#">官方论坛</a></li><span>|</span>
+			    	<li><a href="#">官方论坛</a></li>
+			    	<li><a href="#">荣誉奖项</a></li><span>|</span>
 			    </ul> 
 			</div>
 			<div class="cart ">
@@ -77,14 +60,13 @@
 					<div>0</div>
 				</a>
 			</div>
-		</div>
-		
+		</div>	
 	</div>
-	<div class="header  clearfix" style="">
+	<div class="header">
 		<div class="container">
-		   <ul>
+		   <ul class="phone-nav">
 			     <li><a href="#">首页</a></li>
-			      <li><a href="#">手机</a></li>
+			     <li><a href="#" >手机</a></li>
 			     <li><a href="#">“足迹”手感膜</a></li>
 			     <li><a href="#">官方配件</a></li>
 			     <li><a href="#">空气净化类</a></li>
@@ -93,41 +75,74 @@
 			     <li><a href="#">全部</a></li>
 			     <li><a href="#">服务</a></li>
 			     <li><a href="#">企业团购</a></li>
-		    </ul>
-
-	    </div>
-	</div>
-	<div class="header  clearfix" style="display: none; z-index: 21; position: absolute;background: #f7f7f7; width: 100%;" id="box">
-		<div class="container">
-		   <ul>
-			     <li><a href="#">首页</a></li>
-			      <li><a href="#">手机</a></li>
-			     <li><a href="#">“足迹”手感膜</a></li>
-			     <li><a href="#">官方配件</a></li>
-			     <li><a href="#">空气净化类</a></li>
-			     <li><a href="#">品牌周边</a></li>
-			     <li><a href="#">第三方商品</a></li>
-			     <li><a href="#">全部</a></li>
-			     <li><a href="#">服务</a></li>
-			     <li><a href="#">企业团购</a></li>
-		    </ul>
-		   <div class="cart " style="float: right;right: 100px;">
-				<a href="#">
-					<i class="fas fa-user" style="margin-right: 30px"></i>
-				    <i class="fas fa-shopping-cart"></i>
-					<div style="display:inline-block;
-	line-height: 20px;
-	width: 20px;
-	height: 20px;
-	text-align: center;
-	border-radius: 10px;
-    color: #fff;
-    font-size: 12px;
-    background-color: #999;">0</div>
-				</a>
+			     <div class="search-bar">
+					<button><i class="fas fa-search"></i></button>
+			    	<input type="text" name="" class="search-box" placeholder="请输入商品名称">
+			    	<div>
+			    		<a href="#">坚果R1</a>
+			    		<a href="#">坚果TNT工作站</a>
+			    	</div>
+		   		 </div> 
+			</ul>
+			<div class="header  clearfix" id="box">
+				<div class="container">
+				   <ul>
+					     <li><a href="#">首页</a></li>
+					     <li><a href="#">手机</a></li>
+					     <li><a href="#">“足迹”手感膜</a></li>
+					     <li><a href="#">官方配件</a></li>
+					     <li><a href="#">空气净化类</a></li>
+					     <li><a href="#">品牌周边</a></li>
+					     <li><a href="#">第三方商品</a></li>
+					     <li><a href="#">全部</a></li>
+					     <li><a href="#">服务</a></li>
+					     <li><a href="#">企业团购</a></li>
+				    </ul>
+				   <div class="cart " style="float: right;right: 100px;">
+						<a href="#">
+							<i class="fas fa-user" style="margin-right: 30px"></i>
+						    <i class="fas fa-shopping-cart"></i>
+							<div style="display:inline-block;
+										line-height: 20px;
+										width: 20px;
+										height: 20px;
+										text-align: center;
+										border-radius: 10px;
+									    color: #fff;
+									    font-size: 12px;
+									    background-color: #999;">
+							0
+							</div>
+						</a>
+					</div>
+	   			 </div>
 			</div>
-	    </div>
-	</div>
+			 <div class="header-nav">
+		    	<ul>
+		    		<li>
+		    			<img src="https://resource.smartisan.com/resource/06c2253354096f5e9ebf0616f1af2086.png?x-oss-process=image/resize,w_160/format,webp">
+		    			<p class="produce-name">坚果R1</p>
+		    			<p>¥ 3,499.00 起</p>
+		    		</li>
+		    		<li>
+		    			<img src="https://resource.smartisan.com/resource/13e91511f6ba3227ca5378fd2e93c54b.png?x-oss-process=image/resize,w_160/format,webp">
+		    			<p class="produce-name">坚果R1</p>
+		    			<p>¥ 3,499.00 起</p>
+		    		</li>
+		    		<li>
+		    			<img src="https://resource.smartisan.com/resource/c71ce2297b362f415f1e74d56d867aed.png?x-oss-process=image/resize,w_160/format,webp">
+		    			<p class="produce-name">坚果R1</p>
+		    			<p>¥ 3,499.00 起</p>
+		    		</li>
+		    		<li>
+		    			<img src="https://resource.smartisan.com/resource/b68b71f1f97490fa8694a97057abd813.png?x-oss-process=image/resize,w_160/format,webp">
+		    			<p class="produce-name">坚果R1</p>
+		    			<p>¥ 3,499.00 起</p>
+		    		</li>
+		    	</ul>
+			</div>
+	    </div>    
+	</div>  
 	<div class="check">
 		<ul>
 			<li><a href="#">综合排序</a></li>
@@ -511,4 +526,6 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript" src="javascript/tool.js"></script>
+<script type="text/javascript" src="javascript/fzf.js"></script>
 </html>
