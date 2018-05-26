@@ -11,7 +11,7 @@
 	 <div class="top-header" id="top-header">
 		<ul class="headert" id="top-headert">
 	        <li><a href="#">首页</a><span>.</span></li> 
-	        <li><a href="#">手机</a><span>.</span></li>		    
+	        <li class="phoneLi"><a href="#">手机</a><span>.</span></li>		    
 	        <li><a href="#">“足迹”手感膜</a><span>.</span></li>		    
 	        <li><a href="#">官方配件</a><span>.</span></li>	   
 	        <li><a href="#">空气净化类</a><span>.</span></li>
@@ -36,10 +36,15 @@
 				    <li><span>|</span></li>
 			    </ul>
 		    </div>
-
 			<div class="topr">
 				<a href="#"><img src="images/photo.png"></a>
-				<a href="#"><img src="images/gouwuche.png"><span>(<span>0</span>)</span></a>
+				<a href="#" class="a2"><img src="images/gouwuche.png"><span>(<span>0</span>)</span></a>
+			</div>
+			<div class="divb">
+				<div class="divs"></div>
+				<img src="images/GWB.png">
+				<p class="p1">购物车为空</p>
+				<p class="p2">您还没有选购任何商品，现在前往商城选购吧！</p>
 			</div>
 		</div>
 	</div>
@@ -48,7 +53,7 @@
 	<div class="header">
 		<ul class="headert">
 	        <li><a href="#">首页</a><span>.</span></li> 
-	        <li><a href="#">手机</a><span>.</span></li>		    
+	        <li class="phoneLi"><a href="#" id="phoneA">手机</a><span>.</span></li>		    
 	        <li><a href="#">“足迹”手感膜</a><span>.</span></li>		    
 	        <li><a href="#">官方配件</a><span>.</span></li>	   
 	        <li><a href="#">空气净化类</a><span>.</span></li>
@@ -56,6 +61,30 @@
 		    <li><a href="#">第三方商品</a><span>.</span></li>
 		    <li><a href="#">全部</a><span>.</span></li>
 		    <li><a href="#">服务</a></li>
+		    <li class="souLi">
+			    <div class="sou">
+					<input type="text" name="" id="txt" placeholder="请输入搜索的商品">
+					<ul class="souList">
+						<li class="li1" id="sli1">坚果 R1</li>
+						<li class="li2" id="sli2">坚果 TNT 工作站</li>
+					</ul>
+				</div>
+				<div class="sL" id="sL">
+					<div class="sLs"></div>
+					<ul>
+						<li>坚果TNT工作站</li>
+						<li>坚果 R1</li>
+						<li>坚果 3</li>
+					</ul>
+				</div>
+		    </li>
+		</ul>
+	</div>
+	<div class="headerList" id="headerList">
+		<ul class="ulList">
+			<li><img src="images/1.jpg"><p class="p1">坚果R1</p><p class="p2">￥3499元起</p></li>
+			<li><img src="images/2.jpg"><p class="p1">坚果R1</p><p class="p2">￥3499元起</p></li>
+			<li><img src="images/3.jpg"><p class="p1">坚果R1</p><p class="p2">￥3499元起</p></li>
 		</ul>
 	</div>
 	<!-- header end -->
@@ -400,13 +429,12 @@
 		    	</select>
 		            <!-- </div> -->
 		    </div>
-		    <!-- < --><!-- div class="bottomr">
-		    	
-		    </div> -->
 		</div>
 
 	</div>
 	<!-- bottom end -->
 </body>
+<script type="text/javascript" src="javascript/足迹data.js"></script>
+<script type="text/javascript" src="javascript/足迹animation.js"></script>
 <script type="text/javascript" src="javascript/足迹手感膜.js"></script>
 </html>

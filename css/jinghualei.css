@@ -54,6 +54,43 @@
 	text-align: center;
 
 }
+/*购物车列表*/
+.top .contain .gouwuche-list{
+	position: absolute;
+	top: 75px;
+	right: 170px;
+	width: 360px;
+	height: 314px;
+	background: #f7f7f7;
+	text-align: center;
+	z-index: 30;
+	border-radius: 3%;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+	display: none;
+}
+.top .contain .gouwuche-list .xiaosanjiao{
+	width: 12px;
+	height: 12px;
+	background: #f7f7f7;
+	position: absolute;
+	top: 0px;
+	right: 39px;
+	transform: translateY(-6px) rotate(45deg);
+	border-radius: 3px;
+}
+.top .contain .gouwuche-list i{
+	color: #ccc;
+	font-size:62px;
+	margin-top: 100px;
+}
+.top .contain .gouwuche-list .p11{
+	font-size: 18px;
+	margin-top: 25px;
+}
+.top .contain .gouwuche-list .p12{
+	font-size: 12px;
+    color: #bcbcbc;
+}
 /*JS顶部导航栏*/
 #jstop{
 	width: 100%;
@@ -62,6 +99,7 @@
 	left: 0;
 	background: #f7f7f7;
 	z-index: 2;
+	overflow: hidden;
 }
 #jstop>.contain{
 	width: 1220px;
@@ -72,71 +110,38 @@
 	margin-left: -610px;
 }
 #jstop .contain li{
-	height: 90px;
 	float: left;
 }
 #jstop .contain li a{
-	line-height: 90px;
+	line-height: 60px;
 	margin-right: 45px;
 	color: #666;
 	text-decoration: none;
 }
+#jstop .contain li:nth-child(5) a{
+	font-weight: 900;
+}
 #jstop .contain li a:hover{
 	color: #5079d9;
 }
-#shouJ{
-	position: absolute;
-	top: 210px;
-	z-index: 999;
-	background: rgba(255,255,255,0.5);
-}
-#shouJ{
-	background: #ededed;
-	opacity:0.9;
-}
-#shouJ>div{
-	width: 200px;
-	height: 330px;
-	text-align: center;
-	background: #fff;
-	float: left;
-	margin-top: 20px;
-}
-#shouJ div img{
-	width: 100%;
-}
-#shouJ div> .xiaozi{
-	margin-top: 50px;
-	font-size: 14px;
-	color: #989898;
-}
-#shouJ div>p:last-child{
-	margin-top: 30px;
-	font-size: 14px;
-	color: #d44d44;
-	font-weight:900;
-}
-#shouJ div:first-child{
-	margin-left: 310px;
-}
-#jstop .contain .gouwuche {
+#jstop .gouwuche {
 	float: right;
 	color: #fff;
 	/*line-height: 100px;*/
-	padding: 37px 0 37px 0;	
+	padding: 22px 0 22px 0;	
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 0px;
+	right: 300px;
 }
-#jstop .contain .gouwuche span:nth-of-type(1){
+#jstop .gouwuche span:nth-of-type(1){
 	margin-right: 30px;
 }
-#jstop .contain .gouwuche a{
+#jstop .gouwuche a{
 	color: #999;
 	font-size: 20px;
 
 }
-#jstop .contain .gouwuche #shuzi{
+#jstop .gouwuche #shuzi{
 	display: inline-block;
 	width: 20px;
 	height: 20px;
@@ -157,6 +162,9 @@
 	height: 90px;
 	float: left;
 }
+.nav .contain ul li:nth-child(5) a{
+	font-weight: 900;
+}
 .nav .contain li a{
 	line-height: 90px;
 	margin-right: 45px;
@@ -169,40 +177,58 @@
 .nav1{
 	position: relative;
 }
+/*手机下拉*/
 #shouJ{
-	position: absolute;
-	top: 210px;
-	z-index: 999;
-	background: rgba(255,255,255,0.5);
-}
-#shouJ{
-	background: #ededed;
-	opacity:0.9;
-}
-#shouJ>div{
-	width: 200px;
-	height: 330px;
-	text-align: center;
-	background: #fff;
-	float: left;
-	/*margin-top: 20px;*/
-}
-#shouJ div img{
 	width: 100%;
+	height: 0px;
+	background: #f7f7f7;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	position: absolute;
+	top: 100px;
+	z-index: 1;
+	overflow: hidden;
 }
-#shouJ div> .xiaozi{
-	margin-top: 50px;
-	font-size: 14px;
-	color: #989898;
+#shouJ .contain{
+	background: #f7f7f7;
 }
-#shouJ div>p:last-child{
-	margin-top: 30px;
-	font-size: 14px;
-	color: #d44d44;
-	font-weight:900;
+#shouJ .zhanshi{
+	border: none;
 }
-#shouJ div:first-child{
-	margin-left: 310px;
+#shouJ .zhanshi div{
+	position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 234px;
+    height: 260px;
+    font-size: 14px;
+	text-align: center;
+}
+#shouJ .zhanshi div img{
+	width: 100%;
+	margin-top: 60px;
+	border-right: 1px solid #ccc;
+}
+#shouJ .zhanshi div img:hover{
+	transform: translateY(-3px);
+}
+#shouJ .zhanshi div:last-child img{
+	border-right:none;
+}
+#shouJ .zhanshi div:nth-child(1){
+	margin-left: 142px;
+}
+#shouJ .zhanshi div .xiaozi{
+	padding-top: 16px;
+    line-height: 12px;
+    font-size: 12px;
+    color: #616161;
+}
+#shouJ .zhanshi div .jiage{
+	padding-top: 10px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #d44d44;
+    font-weight: 700;
 }
 /*分类*/
 .fenlei .contain li{
@@ -222,11 +248,15 @@
 	font-size: 12px;
 	color: #ccc;
 }
+.fenlei .contain li:first-child a{
+	color:#5079d9; 
+}
 .fenlei .contain li a:hover{
 	color:#5079d9; 
 }
 
 /*主体*/
+/*查看详情图标开始*/
 .yincang {
 	width: 100%;
 	height: 30px;
@@ -264,6 +294,7 @@
 	bottom: 52px;
 	display: block;
 }
+/*查看详情图标结束*/
 .zhuti .contain .diyihang{
 	width: 100%;
 	height: 430px;
