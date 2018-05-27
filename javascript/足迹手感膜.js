@@ -93,15 +93,31 @@ function foundList(){
 	var oSli1=document.getElementById('sli1');
 	var oSli2=document.getElementById('sli2');
 	var oSl=document.getElementById('sL');
+	var oSpan=document.getElementById('sSpan');
+	var timer=null;
 	oInput.onfocus=function(){
+		clearTimeout(timer);
 		oSli1.style.display="none";
 		oSli2.style.display="none";
 		oSl.style.display="block";
+		oSpan.style.display='block';
 
 	}
 	oInput.onblur=function(){
+		setTimeout(function(){
+			oSli1.style.display="block";
+			oSli2.style.display="block";
+			oSl.style.display="none";
+		},300)
+	}
+	oSl.onmouseenter=function(){
+		clearTimeout(timer);
+	}
+	document.onclick=function(){
+		oSl.style.display='none';
+		oSpan.style.display='none';
 		oSli1.style.display="block";
 		oSli2.style.display="block";
-		oSl.style.display="none";
+		
 	}
 }
