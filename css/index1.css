@@ -68,7 +68,7 @@ body{
 	position: absolute;
 	top: 70px;
 	right: 0px;
-	z-index: 99;
+	z-index: 150;
 	border-radius: 10px/10px;
 	display: none;
 }
