@@ -23,6 +23,58 @@ a{
 	margin-right: auto;
 	margin-left: auto;
 }
+.cart-content{
+	position: absolute;
+	top:75px;
+	right: 182px;
+	width: 360px;
+	height: 220px;
+	background: #fff;
+	z-index: 30;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.06), 0 20px 40px rgba(0,0,0,.15);
+	border: 0 solid hsla(0,0%,100%,.01);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.cart-content div{
+	text-align: center;
+	width: 100%;
+	margin-top: 60px;
+}
+.cart-content div i{
+	font-size: 50px;
+	color: #bcbcbc;	
+	margin-bottom: 20px;
+}
+.cart-content h3{
+	font-size: 18px;
+	color: #333;
+	margin-bottom: 7px;
+	font-weight: 400px;
+	margin-left: 10px;
+
+}
+.cart-content div p{
+	font-size: 12px;
+	color: #bcbcbc;
+	margin-left: 20px;
+}
+.little{
+	position: absolute;
+	top:69px;
+	right: 207px;
+	background: #fff;
+	width: 20px;
+	height: 20px;
+	z-index: 30;
+	border-radius: 4px;
+	border: 0 solid hsla(0,0%,100%,.01);
+	transform: rotateZ(45deg);
+
+}
+.carts{
+	display: none;
+}
 .flow{
 	width: 1583px;
 	height: 5091px;
@@ -56,42 +108,57 @@ a{
     color: #666;
     font-weight: 300;
 }
-.table .title {
-	width: 100%;
-	height: 72px;
-    line-height: 72px;
-    text-align: center;
+.table .title
+{
     font-size: 18px;
     font-weight: 400;
+    line-height: 72px;
+
+    width: 100%;
+    height: 72px;
+
+    text-align: center;
+
     color: #646464;
     border-bottom: 1px solid #e6e6e6;
-    box-shadow: 0 1px 7px rgba(0,0,0,.06);
+    border-radius: 12px 12px 0 0;
     background: #fdfdfd;
     background: linear-gradient(#fbfbfb,#ececec);
-    border-radius: 12px 12px 0 0;
+    box-shadow: 0 1px 7px rgba(0,0,0,.06);
 }
-.table h6{
-	font-size: 18px;
-    color: #323232;
+
+.table h6
+{
+    font-size: 18px;
     font-weight: 400;
     line-height: 23px;
-    margin-bottom: 15px;
+
     margin-top: 15px;
+    margin-bottom: 15px;
+
+    color: #323232;
 }
-.table .require .request{
-  width: 404px;
-  height: 85px;
-	margin: 0 auto;
-	border-bottom: 1px dashed #e5e5e5;
-	margin-top: 18px;
-	padding-bottom: 60px;
+
+.table .require .request
+{
+    width: 404px;
+    height: 85px;
+    margin: 0 auto;
+    margin-top: 18px;
+    padding-bottom: 60px;
+
+    border-bottom: 1px dashed #e5e5e5;
 }
-.table .surply .step{
-  margin: 20px auto;
-  width: 404px;
-  height: 205px;
-  border-bottom:1px dashed #e5e5e5;
+
+.table .surply .step
+{
+    width: 404px;
+    height: 205px;
+    margin: 20px auto;
+
+    border-bottom: 1px dashed #e5e5e5;
 }
+
 .table .contact p{
   font-size: 14px;
   color: #323232;
@@ -186,9 +253,13 @@ body{
 	color: #999;
 	float: left;
 	margin-top: 30px;
-	}
-.top .cart i:nth-child(1){
+}
+.top .cart .fa-user{
 	margin-right: 20px;
+}
+.top .cart .fa-shopping-cart{
+	font-size: 16px;
+
 }
 .top .cart div{
 	display:inline-block;
@@ -234,6 +305,9 @@ body{
 	line-height: 60px;
 	height: 60px;
 }
+#box .cart .fa-shopping-cart{
+	font-size: 18px;
+}
 .header .cart{
 	position: absolute;
 	height: 40px;
@@ -250,9 +324,6 @@ body{
 	margin-left: 30px;
 	color:  #dfdfdf;
 	padding-left: 10px;
-}
-.header .container .phone-nav li{
-  position: absolute;
 }
 .header li:nth-child(1){
 	list-style:none;
