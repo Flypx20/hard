@@ -504,7 +504,45 @@ body{
 .header li a:hover{
 	color: #5079d9;
 }
+.header .search-content{
+    position: absolute;
+    top:80px;
+    right: 180px;
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 10px #e5e5e5;
+    z-index: 999;
 
+}
+.header .search-content .search-little{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    top:-5px;
+    right: 275px;
+    transform: rotateZ(45deg);
+    z-index: 10;
+}
+.header .search-content .search-nav{
+    width: 100%;
+    height: 100%;
+    color: #232020;
+    font-size: 14px;
+}
+.header .search-content .search-nav li{
+    width: 400px;
+    height: 20px;
+    display: block;
+    margin-left: 30px;
+    margin-top: 18px;
+}
+.header .search-content .search-nav li:nth-child(1){
+    margin-left: 38px;
+}
 .header .search-bar
 {
     line-height: 36px;

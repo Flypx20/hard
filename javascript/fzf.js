@@ -1,10 +1,7 @@
 
-fzfHeaderNav();
-fzfTop();
-fzfDownload();
-fzfCart();
-fzfCart2();
-function fzfTop(){
+
+(function(w){
+	function fzfTop(){
 	var isShow = false;	
 	window.onscroll = function(){
 		var oDiv = document.getElementById('box');
@@ -86,15 +83,20 @@ function fzfTop(){
 		}
 	};
 }
-function fzfHeaderNav(){
+w.fzfTop = fzfTop;
+})(window);
+(function(w){
+	function fzfHeaderNav(){
 	var oHeader = document.querySelector('.header');
 	var oPhone = document.querySelectorAll('.header  .phone-nav a');
 	var oPhoneNav = document.querySelector('.header  .header-nav ul');
 	var oNav = document.querySelector('.header .header-nav');
 	var timer = null;
+	var time = null;
 	for (var i = 0; i < oPhone.length - 3; i++) {
 		if (i == 1) {
 			oPhone[i].onmouseenter = function() {
+				clearTimeout(time);
 				clearTimeout(timer);
 				oPhoneNav.style.borderTop = '1px solid #d8d8d8';
 				animation(oPhoneNav, {opacity:100});
@@ -102,6 +104,7 @@ function fzfHeaderNav(){
 			};
 		}else{
 			oPhone[i].onmouseenter = function() {
+				clearTimeout(time);
 				timer = setTimeout(function(){
 					oPhoneNav.style.borderTop = 'none';
 					animation(oNav, {height:0});
@@ -116,8 +119,13 @@ function fzfHeaderNav(){
 			animation(oNav, {height:0});
 			animation(oPhoneNav, {opacity:0});
 		},400);
-	};		
+	};	
+	oHeader.onmouseenter = function(){
+		clearTimeout(time);
+	};
 }
+w.fzfHeaderNav = fzfHeaderNav;
+})(window);
 function fzfDownload(){
 	var oPhone = document.querySelectorAll('.header  .phone-nav a')[9];
 	var oPhonec = document.querySelectorAll('#box ul li a')[9];
@@ -206,3 +214,8 @@ function fzfCart2(){
 		},300);
 	};
 }
+fzfHeaderNav();
+fzfTop();
+fzfDownload();
+fzfCart();
+fzfCart2();
