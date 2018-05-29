@@ -121,7 +121,7 @@ a
 
 .header-carts .header-little
 {
-   
+
     width: 20px;
     height: 20px;
 
@@ -156,7 +156,7 @@ a
 }
 .carts-content div i{
 	font-size: 50px;
-	color: #bcbcbc;	
+	color: #bcbcbc;
 	margin-bottom: 20px;
 }
 .carts-content h3
@@ -427,6 +427,7 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	height: 90px;
+    border-bottom: 1px solid #d8d8d8;
 }
 .header .container .phone-nav
 {
@@ -434,10 +435,10 @@ body{
 
     position: relative;
 
-    width: 100%;
+    width: 890px;
     height: 89px;
 
-    border-bottom: 1px solid #d8d8d8;
+
 }
 
 
