@@ -214,8 +214,63 @@ function fzfCart2(){
 		},300);
 	};
 }
+function fzfSearch(){
+	var oIput = document.querySelector('.header .search-bar input');
+	//console.log(oIput);
+	var oDiv = document.querySelector('.header .search-bar div');
+	//console.log(oDiv);
+	var oSearchContent = document.querySelector('.header .search-content');
+	//console.log(oSearchContent);
+	var timer = null;
+	oIput.onfocus = function(){
+		clearTimeout(timer);
+		oDiv.style.display = 'none';
+		oSearchContent.style.display = 'block';
+		oIput.placeholder = '请输入商品名称';
+	};
+	oIput.onblur = function(){
+		oDiv.style.display = 'block';
+		oSearchContent.style.display = 'none';
+		oIput.placeholder = '';
+	};
+	oIput.oninput = function(){
+		timer=setTimeout(function(){
+			oDiv.style.display = 'none';
+			oSearchContent.style.display = 'none';
+			oIput.placeholder = '';
+		},300);
+		
+	};
+}
+function fzfGood(){
+	var aCheck = document.querySelectorAll('.check a');
+	//console.log(aCheck);
+	for (var i = 0; i < aCheck.length; i++) {
+		aCheck[i].index = i;
+		aCheck[i].onclick = function(){
+			for (var j = 0; j < aCheck.length; j++) {
+				aCheck[j].className = '';
+			}
+			this.className = 'active';
+			recive(this.index);
+		};
+	}
+	function recive(index){
+		var oImg = document.querySelectorAll('.good .img img');
+		//console.log(oImg);
+		var Datas = fzfData[index];
+		for (var i = 0; i < Datas.length; i++) {
+			 var Self = i;
+			for (var j = 0; j < oImg.length; j++) {
+				oImg[j].src = Datas[Self].img;
+			}
+		}
+	}
+}
 fzfHeaderNav();
 fzfTop();
 fzfDownload();
 fzfCart();
 fzfCart2();
+fzfSearch();
+fzfGood();
