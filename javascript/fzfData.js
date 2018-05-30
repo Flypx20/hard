@@ -7,116 +7,116 @@ var fzfData = [
 			img:"images/2.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/3.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/4.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/5.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/6.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/7.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/8.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/9.webp"
 		},
 
 		{
-			img:"images/2.webp"
+			img:"images/10.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/11.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/12.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/13.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/14.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/15.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/16.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/17.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/18.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/19.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/20.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/21.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/22.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/23.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/24.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/25.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/26.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/27.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/37.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/29.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/30.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/31.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/33.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/34.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/35.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/36.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/37.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/38.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/39.webp"
 		},
 		{
-			img:"images/2.webp"
+			img:"images/25.webp"
 		}
 	],
 	[
