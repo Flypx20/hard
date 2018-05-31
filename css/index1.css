@@ -13,6 +13,7 @@ body{
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
+
 }
 .top0 .logo{
 	float: left;
@@ -152,6 +153,7 @@ body{
 	top: 35px;
 	border-radius: 15px/15px;
 	z-index: 120;
+	border: none;
 }
 .souList{
 	width: 330px;
@@ -197,6 +199,12 @@ body{
 	font-size: 14px;
 	display: none;
 }
+.sou img{
+	position: absolute;
+	top: 40px;
+	right: 300px;
+	z-index: 140;
+}
 /*搜索end*/
 /*搜索列表*/
 .sL{
@@ -211,6 +219,16 @@ body{
 	box-sizing: border-box;
 	border-radius: 10px/10px;
 	display: none;
+	float: left;
+}
+.sL li{
+	width: 320px;
+	height: 30px;
+	float: left;
+}
+.sL li:hover{
+	color:#6e94f3;
+	font-weight: bolder;
 }
 .sLs{
 	width: 20px;
@@ -220,11 +238,6 @@ body{
 	position: absolute;
 	top: -5px;
 	left: 20px;
-}
-.sL ul{
-	width: 320px;
-	height: 350px;
-	float: left;
 }
 /*搜索列表结束*/
 .top-header .headert{
@@ -261,6 +274,7 @@ body{
 	text-align: center;
 	font-size: 14px;
 	display: none;
+	box-shadow: 0px 3px 0.2px #ededed;
 }
 .headerList .p1{
 	color: #ccc;

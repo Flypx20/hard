@@ -101,6 +101,8 @@ function foundList(){
 		oSli2.style.display="none";
 		oSl.style.display="block";
 		oSpan.style.display='block';
+		oInput.style.border='none';
+
 
 	}
 	oInput.onblur=function(){
