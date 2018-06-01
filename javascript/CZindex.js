@@ -25,11 +25,25 @@ window.onload=function(){
 		(function(w){
 				var oCart=document.querySelector('.b2').children[0];
 				var oCartBox=document.querySelector('.nav-box');
+				console.log(oCartBox)
+				var timer=null;
+				clearTimeout(timer);
 				oCart.onmouseover=function(){
-					animation(oCartBox,{'height':300},false);
+					clearTimeout(timer);
+					oCartBox.style.display='block'
 				}
 				oCart.onmouseout=function(){
-					animation(oCartBox,{'height':0},false);
+					timer=setTimeout(function(){
+						oCartBox.style.display='none'
+					},500)
+				}
+				oCartBox.onmouseover=function(){
+					clearTimeout(timer);
+					oCartBox.style.display='block'
+				}
+				oCartBox.onmouseout=function(){
+					clearTimeout(timer);
+					oCartBox.style.display='none'
 				}
 		})(window);
 
@@ -248,8 +262,6 @@ window.onload=function(){
 			})
 		})(window);
 		/*切换图片*/
-			var TPxiabiao=$('.li').index();
-			console.log('11::',TPxiabiao);
 		$(function(){
 			$('.li').delegate('ul','mouseover',function(){
 				var $this=$(this);
