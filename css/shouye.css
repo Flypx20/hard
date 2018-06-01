@@ -404,6 +404,10 @@ section{
 	margin-top: 80px;
 	padding-left: 40px;
 	width: 306px;
+	display: none;
+}
+.content2 .hot2 ul .hot2img.block{
+	display: block;
 }
 .content2 .hot2 ul .hot2word{
 	width: 183px;

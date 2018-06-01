@@ -253,20 +253,25 @@ window.onload=function(){
 		$(function(){
 			$('.li').delegate('ul','mouseover',function(){
 				var $this=$(this);
-				// console.log($this.index())
-				// var TPxiabiao=$('.li').index();
-				/*获取图片下标*/
-				// console.log('11::',TPxiabiao);
-				// console.log($('.li'))
 				$this.addClass('active1');
 				var qita=$this.siblings();
 				// console.log(qita)
 				qita.removeClass('active1');
+				/*鼠标放在小圆点上实现CLASS*/
 				var xiabiao=$this.index();
 				var oLi=$('.li');
 				var father=$this.get(0).parentNode.parentNode;
-				var img=father.children[0]
-				img.children[0].src="images/kouzhao"+(xiabiao)+".webp"
+				/*获取当前小圆点的父元素的父元素*/
+				var img=father.children;
+				/*获取图片一级的所有元素*/
+				var $img=$(img);
+				/*把DOMimg转换为jquery，为了用jquery的方法*/
+				console.log($img);
+				var dangqian=$img.eq(xiabiao);
+				/*鼠标放在第几个小圆点就和小圆点下标相对应的的图片出来*/
+				dangqian.addClass('block');
+				dangqian.siblings().removeClass('block')
+				/*出来后给其他图片display：none*/
 			})
 		})
 	}
