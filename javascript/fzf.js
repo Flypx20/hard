@@ -96,7 +96,7 @@ w.fzfTop = fzfTop;
 	var timer = null;
 	var time = null;
 	for (var i = 0; i < oPhone.length - 3; i++) {
-		if (i == 1) {
+		if (i = 1) {
 			oPhone[i].onmouseenter = function() {
 				clearTimeout(time);
 				clearTimeout(timer);
