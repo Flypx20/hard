@@ -24,7 +24,9 @@ a
     color: #b0b0b0;
 }
 
-
+.bug{
+    height: 91px;
+}
 .container{
 	width: 1220px;
 	margin-right: auto;
