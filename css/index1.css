@@ -144,7 +144,10 @@ body{
 	box-shadow: 0 2px 2px #ccc;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2ba94a8bc495047edf3a720c40addb48c919946b
 /*搜索*/
 .header .sou input{
 	width: 330px;
@@ -242,7 +245,10 @@ body{
 	left: 20px;
 }
 /*搜索列表结束*/
+<<<<<<< HEAD
 >>>>>>> dev
+=======
+>>>>>>> 2ba94a8bc495047edf3a720c40addb48c919946b
 .top-header .headert{
 	height: 60px;
 	margin: 0 auto;
@@ -269,7 +275,10 @@ body{
 	color: rgb(112,150,243);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2ba94a8bc495047edf3a720c40addb48c919946b
 /*下拉列表*/
 .headerList{
 	width: 100%;
@@ -307,7 +316,10 @@ body{
 	float: left;
 	border-right: 1px solid #ccc;
 }
+<<<<<<< HEAD
 >>>>>>> dev
+=======
+>>>>>>> 2ba94a8bc495047edf3a720c40addb48c919946b
 /*header end*/
 /*main beign*/
 .main{
