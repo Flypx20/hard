@@ -517,7 +517,7 @@ body{
     border-radius: 10px;
     border: 1px solid #e5e5e5;
     box-shadow: 0 4px 10px #e5e5e5;
-    z-index: 999;
+    z-index:500000;
     display: none;
 
 }
