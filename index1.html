@@ -5,52 +5,116 @@
 	<title>锤子首页</title>
 	<link rel="stylesheet" href="css/重置代码.css">
 	<link rel="stylesheet" href="css/web-fonts-with-css/css/fontawesome-all.min.css">
-	<link rel="stylesheet" href="css/锤子首页CSS.css">
+	<link rel="stylesheet" href="css/shouye.css">
+	<script src="javascript/CZindex.js"></script>
+	<script src="javascript/donghua.js"></script>
+	<script src="javascript/jquery-1.12.4.js"></script>
 </head>
 <body>
 	<nav>
-		<div>
+		<div class="nav1">
 			<ul class="navleft">
 				<li><img src="images/锤子标志_03.gif" alt=""></li>
 			</ul>
 			<ul class="navright">
-				<li class="b1">
+				<li class="b2">
 					<a href="#">
 						<i class="fas fa-cart-plus"></i>
 					</a>
+					<div class="nav-box">
+						<div class="nav-box1"></div>
+						<i class="fas fa-cart-plus"></i>
+						<!-- <span></span> -->
+						<p><span>购物车还没有新商品，赶快选购吧！</span></p>
+					</div>
 				</li>
-				<li><a href="#"><i class="fas fa-user"></i></a></li>
+				<li>
+					<a href="#"><i class="fas fa-user"></i></a>
+					
+				</li>
 				<li><a href="#">在线商城</a></li>
 				<li><a href="#">坚果Pro2</a></li>
 				<li><a href="#">坚果Pro</a></li>
 				<li><a href="#">Smartisan OS</a></li>
 				<li><a href="#">欢喜云</a></li>
-				<li><a href="yingyongxiazai.html" target="_blank;">应用下载</a></li>
+				<li><a href="yingyongxiazai.html">应用下载</a></li>
 				<li><a href="#">官方论坛</a></li>
 			</ul>
 		</div>
+		
 	</nav>
-	<section>
+	<div class="nav-top">
 		<ul class="b1">
 			<li><a href="#"><b>首页</b></a></li>
 			<li class="phone">
 				<a href="#">手机</a>
-				<ul class="b1son">
-					<li><img src="https://resource.smartisan.com/resource/c71ce2297b362f415f1e74d56d867aed.png?x-oss-process=image/resize,w_160/format,webp" alt=""></li>	
-					<li><img src="https://resource.smartisan.com/resource/b68b71f1f97490fa8694a97057abd813.png?x-oss-process=image/resize,w_160/format,webp" alt=""></li>	
-				</ul>
 			</li>
-			<li><a href="shouganmo.html" target="_blank;">“足迹”手感膜</a></li>
-			<li><a href="peijian.html" target="_blank;">官方配件</a></li>
-			<li><a href="jinghualei.html" target="_blank;">空气净化类</a></li>
+			<li><a href="zujishouganmo.html">“足迹”手感膜</a></li>
+			<li><a href="peijian.html">官方配件</a></li>
+			<li><a href="jinghualei.html">空气净化类</a></li>
 			<li><a href="#">品牌周边</a></li>
 			<li><a href="#">全部</a></li>
 			<li><a href="#">服务</a></li>
 			<li><a href="#">企业团购</a></li>
 		</ul>
-		<div class="contentjpg">
-			<img src="images/banner-01.新品发布会.jpg" alt="">
+		<div class="headright">
+			<input type="text">
+			
+			<a href="#"><i class="fas fa-search"></i></a>
+			<span>坚果pro</span>
+			<span>坚果R1</span>
+			<div class="search-box">
+				<div>
+					<span>坚果pro</span>
+					<span>还剩20件</span>
+				</div>
+				<div>
+					<span>坚果R1</span>
+					<span>还剩10件</span>
+				</div>
+				
+			</div>
 		</div>
+	</div>
+	<!-- 导航手机 -->
+	<div class="nav-content">
+		<div class="head1">
+			<div class="loading"></div>
+			<!-- nav的下拉菜单 -->
+			<ul class="imgphone">
+				<li><a href="#">
+					<img src="images/shouji1.webp" alt="">
+					<p>坚果R1</p>
+					<p>	&#165;1,499.00起</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/shouji2.webp" alt="">
+					<p>坚果R1</p>
+					<p>	&#165;1,499.00起</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/shouji3.webp" alt="">
+					<p>坚果R1</p>
+					<p>	&#165;1,499.00起</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/shouji4.webp" alt="">
+					<p>坚果R1</p>
+					<p>	&#165;1,499.00起</p>
+				</a></li>
+				<li><a href="#">
+					<img src="images/shouji5.webp" alt="">
+					<p>坚果R1</p>
+					<p>	&#165;1,499.00起</p>
+				</a></li>
+			</ul>
+
+		</div>
+	</div>
+	<section>
+		
+		<div id="div1"></div>
+		<!-- 锤子轮播 -->
 		<div class="box1">
 			<ul class="content1">
 				<li class="li1">
@@ -81,77 +145,165 @@
 			<div class="hot1">
 				<h5>热销商品</h5>
 				<ul>
-					<li><a href="#"><span>&gt;</span></a></li>
-					<li><a href="#"><span>&lt;</span></a></li>
+					<li><span class="qiehuan">&gt;</span></li>
+					<li><span class="qiehuan">&lt;</span></li>
 				</ul>
 			</div>
 			<div class="hot2">
-				<ul>
-					<a href="#">
-					<li class="hot2img"><img src="images/hot1.png" alt=""></li>
-					<li class="hot2word"><span>畅呼吸智能净化器·标准版</span></li>
-					<li class="hot2word2"><span>漂亮得不像实力派</span></li>
-					<li class="list1">
-						<ul></ul>
-						<ul></ul>
-						<ul></ul>
-					</li>
-					<li class="hotbottom">
-						<span>1999.00</span>
-						<span>查看详情</span>
-					</li>
-					</a>
-				</ul>
-				<ul>
-					<a href="#">
-					<li class="hot2img"><img src="images/hot2.png" alt=""></li>
-					<li class="hot2word"><span>坚果Pro 2</span></li>
-					<li class="hot2word2"><span>购机最高优惠600元</span></li>
-					<li class="list">
-						<ul></ul>
-						<ul></ul>
-						<ul></ul>
-						<ul></ul>
-						<ul></ul>
-					</li>
-					<li class="hotbottom">
-						<span>1999.00</span>
-						<span>查看详情</span>
-					</li>
-					</a>
-				</ul>
-				<ul>
-					<a href="#">
-					<li class="hot2img"><img src="images/锤子pro.png" alt=""></li>
-					<li class="hot2word"><span>坚果Pro</span></li>
-					<li class="hot2word2"><span>购空净 标准版 限时优惠500元</span></li>
-					<li class="list2">
-						<ul></ul>
-					</li>
-					<li class="hotbottom">
-						<span>1999.00</span>
-						<span>查看详情</span>
-					</li>
-					</a>
-				</ul>
-				<ul>
-					<a href="#">
-					<li class="hot2img"><img src="images/hot3.png" alt=""></li>
-					<li class="hot2word"><span>畅呼吸防护口罩（花粉、粉尘、PM2.5、病菌）</span></li>
-					<li class="hot2word2"><span>呼吸口罩盒装 买一盒随机送一盒</span></li>
-					<li class="list">
-						<ul></ul>
-						<ul></ul>
-						<ul></ul>
-						<ul></ul>
-						<ul></ul>
-					</li>
-					<li class="hotbottom">
-						<span>1999.00</span>
-						<span>查看详情</span>
-					</li>
-					</a>
-				</ul>
+				<div class="hot2son">
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/jianguo0.webp" alt=""></li>
+						<li class="hot2img "><img src="images/jianguo1.webp" alt=""></li>
+						<li class="hot2img "><img src="images/jianguo2.webp" alt=""></li>
+						<li class="hot2word"><span>坚果pro2特别版</span></li>
+						<li class="hot2word2"><span>漂亮得不像实力派</span></li>
+						<li class="list li">
+							<ul class="active1"></ul>
+							<ul></ul>
+							<ul></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/pro0.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro1.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro2.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro3.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro4.webp" alt=""></li>
+						<li class="hot2word"><span>坚果Pro 2</span></li>
+						<li class="hot2word2"><span>购机最高优惠600元</span></li>
+						<li class="list li">
+							<ul class="active1"></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/锤子pro.png" alt=""></li>
+						<li class="hot2word"><span>坚果Pro</span></li>
+						<li class="hot2word2"><span>购空净 标准版 限时优惠500元</span></li>
+						<li class="list2 li">
+							<ul class="active1"></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/kouzhao0.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao1.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao2.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao3.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao4.webp" alt=""></li>
+						<li class="hot2word"><span>畅呼吸防护口罩（花粉、粉尘、PM2.5、病菌）</span></li>
+						<li class="hot2word2"><span>呼吸口罩盒装 买一盒随机送一盒</span></li>
+						<li class="list li">
+							<ul class="active1"></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/jianguo0.webp" alt=""></li>
+						<li class="hot2img "><img src="images/jianguo1.webp" alt=""></li>
+						<li class="hot2img "><img src="images/jianguo2.webp" alt=""></li>
+						<li class="hot2word"><span>坚果pro2特别版</span></li>
+						<li class="hot2word2"><span>漂亮得不像实力派</span></li>
+						<li class="list1 li">
+							<ul class="active1"></ul>
+							<ul></ul>
+							<ul></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/pro0.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro1.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro2.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro3.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro4.webp" alt=""></li>
+						<li class="hot2word"><span>坚果Pro 2</span></li>
+						<li class="hot2word2"><span>购机最高优惠600元</span></li>
+						<li class="list li">
+							<ul class="active1"></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/锤子pro.png" alt=""></li>
+						<li class="hot2word"><span>坚果Pro</span></li>
+						<li class="hot2word2"><span>购空净 标准版 限时优惠500元</span></li>
+						<li class="list2">
+							<ul></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/kouzhao0.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao1.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao2.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao3.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao4.webp" alt=""></li>
+						<li class="hot2word"><span>畅呼吸防护口罩（花粉、粉尘、PM2.5、病菌）</span></li>
+						<li class="hot2word2"><span>呼吸口罩盒装 买一盒随机送一盒</span></li>
+						<li class="list li">
+							<ul class="active1"></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+				</div>
 			</div>
 	</div>
 	<div class="selected">
@@ -241,77 +393,165 @@
 			<div class="hot1">
 				<h5>热销商品</h5>
 				<ul>
-					<li><a href="#"><span>&gt;</span></a></li>
-					<li><a href="#"><span>&lt;</span></a></li>
+					<li><span class="qiehuan">&gt;</span></li>
+					<li><span class="qiehuan">&lt;</span></li>
 				</ul>
 			</div>
 			<div class="hot2">
-				<ul>
-					<a href="#">
-					<li class="hot2img"><img src="images/hot1.png" alt=""></li>
-					<li class="hot2word"><span>畅呼吸智能净化器·标准版</span></li>
-					<li class="hot2word2"><span>漂亮得不像实力派</span></li>
-					<li class="list1">
-						<ul></ul>
-						<ul></ul>
-						<ul></ul>
-					</li>
-					<li class="hotbottom">
-						<span>&yen;1999.00</span>
-						<span>查看详情</span>
-					</li>
-					</a>
-				</ul>
-				<ul>
-					<a href="#">
-					<li class="hot2img"><img src="images/hot2.png" alt=""></li>
-					<li class="hot2word"><span>坚果Pro 2</span></li>
-					<li class="hot2word2"><span>购机最高优惠600元</span></li>
-					<li class="list">
-						<ul></ul>
-						<ul></ul>
-						<ul></ul>
-						<ul></ul>
-						<ul></ul>
-					</li>
-					<li class="hotbottom">
-						<span>&yen;1999.00</span>
-						<span>查看详情</span>
-					</li>
-					</a>
-				</ul>
-				<ul>
-					<a href="#">
-					<li class="hot2img"><img src="images/锤子pro.png" alt=""></li>
-					<li class="hot2word"><span>坚果Pro</span></li>
-					<li class="hot2word2"><span>购空净 标准版 限时优惠500元</span></li>
-					<li class="list2">
-						<ul></ul>
-					</li>
-					<li class="hotbottom">
-						<span>&yen;1999.00</span>
-						<span>查看详情</span>
-					</li>
-					</a>
-				</ul>
-				<ul>
-					<a href="#">
-					<li class="hot2img"><img src="images/hot3.png" alt=""></li>
-					<li class="hot2word"><span>畅呼吸防护口罩（花粉、粉尘、PM2.5、病菌）</span></li>
-					<li class="hot2word2"><span>呼吸口罩盒装 买一盒随机送一盒</span></li>
-					<li class="list">
-						<ul></ul>
-						<ul></ul>
-						<ul></ul>
-						<ul></ul>
-						<ul></ul>
-					</li>
-					<li class="hotbottom">
-						<span>&yen;1999.00</span>
-						<span>查看详情</span>
-					</li>
-					</a>
-				</ul>
+				<div class="hot2son">
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/jianguo0.webp" alt=""></li>
+						<li class="hot2img "><img src="images/jianguo1.webp" alt=""></li>
+						<li class="hot2img "><img src="images/jianguo2.webp" alt=""></li>
+						<li class="hot2word"><span>坚果pro2特别版</span></li>
+						<li class="hot2word2"><span>漂亮得不像实力派</span></li>
+						<li class="list li">
+							<ul class="active1"></ul>
+							<ul></ul>
+							<ul></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/pro0.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro1.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro2.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro3.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro4.webp" alt=""></li>
+						<li class="hot2word"><span>坚果Pro 2</span></li>
+						<li class="hot2word2"><span>购机最高优惠600元</span></li>
+						<li class="list li">
+							<ul class="active1"></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/锤子pro.png" alt=""></li>
+						<li class="hot2word"><span>坚果Pro</span></li>
+						<li class="hot2word2"><span>购空净 标准版 限时优惠500元</span></li>
+						<li class="list2 li">
+							<ul class="active1"></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/kouzhao0.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao1.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao2.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao3.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao4.webp" alt=""></li>
+						<li class="hot2word"><span>畅呼吸防护口罩（花粉、粉尘、PM2.5、病菌）</span></li>
+						<li class="hot2word2"><span>呼吸口罩盒装 买一盒随机送一盒</span></li>
+						<li class="list li">
+							<ul class="active1"></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/jianguo0.webp" alt=""></li>
+						<li class="hot2img "><img src="images/jianguo1.webp" alt=""></li>
+						<li class="hot2img "><img src="images/jianguo2.webp" alt=""></li>
+						<li class="hot2word"><span>坚果pro2特别版</span></li>
+						<li class="hot2word2"><span>漂亮得不像实力派</span></li>
+						<li class="list1 li">
+							<ul class="active1"></ul>
+							<ul></ul>
+							<ul></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/pro0.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro1.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro2.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro3.webp" alt=""></li>
+						<li class="hot2img"><img src="images/pro4.webp" alt=""></li>
+						<li class="hot2word"><span>坚果Pro 2</span></li>
+						<li class="hot2word2"><span>购机最高优惠600元</span></li>
+						<li class="list li">
+							<ul class="active1"></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/锤子pro.png" alt=""></li>
+						<li class="hot2word"><span>坚果Pro</span></li>
+						<li class="hot2word2"><span>购空净 标准版 限时优惠500元</span></li>
+						<li class="list2">
+							<ul></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+					<ul>
+						<a href="#">
+						<li class="hot2img block"><img src="images/kouzhao0.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao1.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao2.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao3.webp" alt=""></li>
+						<li class="hot2img"><img src="images/kouzhao4.webp" alt=""></li>
+						<li class="hot2word"><span>畅呼吸防护口罩（花粉、粉尘、PM2.5、病菌）</span></li>
+						<li class="hot2word2"><span>呼吸口罩盒装 买一盒随机送一盒</span></li>
+						<li class="list li">
+							<ul class="active1"></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+							<ul></ul>
+						</li>
+						<li class="hotbottom">
+							<span>1999.00</span>
+							<span>查看详情</span>
+						</li>
+						</a>
+					</ul>
+				</div>
 			</div>
 	</div>
 		<div class="selected">

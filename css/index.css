@@ -17,7 +17,7 @@
 			width: 100%;
 			height: 100px;
 			background: black;
-			overflow: hidden;
+			/*overflow: hidden;*/
 		}
 		header .logo,header div img{
 			height: 50px;
@@ -27,6 +27,7 @@
 			width: 1224px;
 			height: 100px;
 			margin: 0px auto;
+			position: relative;
 			/*background-color: yellow;*/
 		}
 		.logo{
@@ -73,8 +74,43 @@
 			text-align: center;
 			border-radius: 50%;
 		}
+		.container .cart-box{
+			width: 350px;
+			height: 350px;
+			background-color: #fff;
+			border-radius: 10px;
+			position: absolute;
+			top: 80px;
+			right: 0px;
+			z-index: 9999;
+			text-align: center;
+			display: none;
+			/*border-top: 1px solid #fff;*/
+		}
+		.container .cart-box img{
+			margin-top: 100px;
+		}
+		.container .cart-box p{
+			margin-top: 10px;
+		}
+		.container .cart-box p:nth-child(2){
+			font-size: 18px;
+		}
+		.container .cart-box p:nth-child(3){
+			font-size: 14px;
+			color: #ccc;
+		}
+		.container .cart-box .box-triangle{
+			width: 20px;
+			height: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+			position: absolute;
+			top: -8px;
+			right: 27px;
+			transform: rotateZ(45deg);
+		}
 		/*daohang*/
-		
 		.daohang{
 			width: 1218px;
 			height: 88px;
@@ -106,34 +142,38 @@
 			text-decoration: none;
 			color: gray;
 		}
-		.daohang .xialakuang{
-			width: 1218px;
+		.xialakuang{
+			width: 100%;
 			height: 0px;
-			border-top: 1px solid gray;
+			/*height: 300px;*/
+			/*border-top: 1px solid gray;*/
 			background: white;
-			/*position: relative;*/
-			/*margin: 0px auto;*/
-			position: fixed;
+			/*background: green;*/
+			position: absolute;
+			top: 100px;
 			margin-top: 88px;
-			/*margin-left: 110px;*/
 			z-index: 999;
 			overflow: hidden;
-			opacity: 0;
-			transition: all 1s;
 		}
-		.daohang div:nth-child(8):hover ~ .xialakuang{
-			opacity:1;
-			height: 400px;
+		.xialakuang .xialakuang-box{
+			width: 1224px;
+			height: 300px;
+			margin: 0 auto;
+			background-color:white;
+			overflow: hidden;
 		}
-		.daohang .xialakuang .tupian{
+		.xialakuang .tupian{
 			width: 600px;
 			height: 100px;
-			margin: 150px auto;
+			margin: 100px auto;
 		}
-		.daohang .xialakuang .tupian img{
+		.xialakuang .tupian img{
 			width: 76px;
 			height: 102px;
 			margin-left: 100px;
+		}
+		.xialakuang .tupian img:hover{
+			cursor: pointer;
 		}
 		/*身体*/
 		.body{
@@ -145,128 +185,9 @@
 			background-color: gold;
 			border-radius: 10px;
 			overflow: hidden;
-		}
-		.huadong{
-			width: 4892px;
-			height: 503px;
 			position: relative;
-			/*overflow: hidden;*/
-			/*animation: huadong 30s;
-			animation-iteration-count: infinite;
-			animation-timing-function: linear;*/
 		}
-		@keyframes huadong{
-			from{
-				margin-left: 0px;
-			}
-			to{
-				margin-left: -3669px;
-			}
-		}
-		.body .huadong .bianqian1{
-			width: 1223px;
-			height: 503px;
-			background: url(../images/锤子便签1.png) no-repeat;
-			background-size: cover;
-			overflow: hidden;
-			position: absolute;
-			opacity: 1;
-			transition: all 0.5s;
-			z-index: 9;
-		}
-		.body .huadong .bianqian2{
-			width: 1223px;
-			height: 503px;
-			background: url(../images/锤子便签2.png) no-repeat;
-			background-size: cover;
-			overflow: hidden;
-			position: absolute;
-			opacity: 1;
-			transition: all 0.5s;
-
-		}
-		.body .huadong .bianqian3{
-			width: 1223px;
-			height: 503px;
-			background: url(../images/锤子便签3.png) no-repeat;
-			background-size: cover;
-			overflow: hidden;
-			position: absolute;
-			opacity: 1;
-			transition: all 0.5s;
-		}
-		.body .huadong .bianqian1 a{
-			width: 150px;
-			height: 60px;
-			background: white;
-			display: block;
-			font-size: 20px;
-			line-height: 60px;
-			border-radius: 10px;
-			text-align: center;
-			font-weight: 600;
-			color: #7d7d7d;
-			position: absolute;
-			top: 304px;
-			left: 244px;
-		}
-		.body .huadong .bianqian1 ul li,.body .huadong .bianqian2 ul li,.body .huadong .bianqian3 ul li{
-			width: 10px;
-			height: 10px;
-			list-style: none;
-			border-radius: 50%;
-			background-color: gray;
-			float: left;
-			margin-right: 8px;
-		}
-		.body .huadong .bianqian1 ul li:nth-child(1){
-			background-color: white;
-		}
-		.body .huadong .bianqian2 ul li:nth-child(2){
-			background-color: white;
-		}
-		.body .huadong .bianqian3 ul li:nth-child(3){
-			background-color: white;
-		}
-		.body .huadong .bianqian1 ul{
-			position: absolute;
-			top: 438px;
-			left: 588px;
-		}
-		.body .huadong .bianqian2 ul{
-			position: absolute;
-			top: 439px;
-			left: 578px;
-		}
-		.body .huadong .bianqian3 ul{
-			position: absolute;
-			top: 438px;
-			left: 577px;
-		}
-		.body .huadong .bianqian2 a,.body .huadong .bianqian3 a{
-			width: 150px;
-			height: 60px;
-			background: rgb(30,30,30);
-			display: block;
-			font-size: 20px;
-			line-height: 60px;
-			border-radius: 10px;
-			text-align: center;
-			font-weight: 600;
-			color: gray;
-			position: absolute;
-			top: 370px;
-			left: 217px;
-		}
-		.body .huadong .bianqian1 ul li:nth-child(2):hover .body .huadong .bianqian1{
-			opacity: 0;
-		}
-		.body .huadong .bianqian2 ul li:nth-child(3):hover .body .huadong .bianqian2{
-			opacity: 0;
-		}
-		.body .huadong .bianqian3 ul li:nth-child(1):hover .body .huadong .bianqian3{
-			opacity: 0;
-		}
+		/*lianjie*/
 		.lianjie{
 			width: 1224px;
 			height: 800px; 
@@ -275,7 +196,6 @@
 			margin: 15px auto;
 			overflow: hidden;
 		}
-		/*lianjie*/
 		.lianjie1{
 			width: 306px;
 			height: 400px;
