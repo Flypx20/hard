@@ -467,6 +467,7 @@ body{
 }
 #box .cart .fa-shopping-cart{
 	font-size: 18px;
+
 }
 .header .cart
 {
@@ -647,11 +648,11 @@ body{
     border: 1px solid #93b2f7;
     background: #e5efff;
 }
-.header .header-nav
+.header-nav
 {
     position: absolute;
     z-index: 999;
-    top: 89px;
+    top: 189px;
     right: 0;
 
     overflow: hidden;
@@ -663,13 +664,13 @@ body{
     box-shadow: 0 2px 2px #cacaca;
 }
 
-.header .header-nav ul{
+.header-nav ul{
 	width: 1226px;
 	height: 350px;
 	margin:0 auto;
 	opacity: 0;
 }
-.header .header-nav ul li
+.header-nav ul li
 {
     font-size: 14px;
 
@@ -690,15 +691,15 @@ body{
     border-right: 1px solid #ebebeb;
 }
 
-.header .header-nav ul li:nth-child(4){
+.header-nav ul li:nth-child(4){
 	border-right: none;
 }
-.header .header-nav ul li img{
+.header-nav ul li img{
 	text-align: center;
 	vertical-align: center;
 	padding-right: 40px;
 }
-.header .header-nav ul li p{
+.header-nav ul li p{
 	margin-top: 10px;
     font-size: 14px;
     color: #d44d44;
@@ -706,7 +707,7 @@ body{
     margin-right: 40px;
     box-sizing: border-box;
 }
-.header .header-nav ul li .produce-name{
+.header-nav ul li .produce-name{
     font-size: 12px;
     color: #616161;
 }
