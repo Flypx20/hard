@@ -23,7 +23,7 @@ function animation(obj,attr,iTarget){
 				obj.style[attr]=curr+iSpeed+'px';	
 			}
 		}
-	},30)
+	},30);
 }
 var isShow=false;	
 window.onscroll=function(){
@@ -68,23 +68,46 @@ function gouWu(){
 headerList1();
 function headerList1(){
 	var oPhoneLi=document.getElementById('phoneA');
+	var aPhone = document.querySelectorAll('.phone a');
+	//console.log(aPhone);
 	var oHeaderList=document.getElementById('headerList');
+	var oHeader = document.querySelector('.header');
 	var timer=null;
-	oPhoneLi.onmouseenter=function(){
-		clearTimeout(timer);
-		oHeaderList.style.display="block";
-	}
-	oPhoneLi.onmouseleave=function(){
-		timer=setTimeout(function(){
-			oHeaderList.style.display="none";
-		},300)
-	}
+	var time = null;
+	for (var i = 0; i < aPhone.length-1; i++) {
+		if (i == 1) {
+			aPhone[i].onmouseenter = function() {
+				clearTimeout(time);
+				clearTimeout(timer);
+				animation(oHeaderList,'height',300);
+			};
+		}else{
+			aPhone[i].onmouseenter = function() {
+				clearTimeout(time);
+				timer=setTimeout(function(){
+					animation(oHeaderList,'height',0);
+				},300);
+			};
+		}
+	}	
 	oHeaderList.onmouseenter=function(){
 		clearTimeout(timer);
-	}
+		clearTimeout(time);
+	};
 	oHeaderList.onmouseleave=function(){
-		oHeaderList.style.display="none";
-	}
+		time=setTimeout(function(){
+			animation(oHeaderList,'height',0);
+		},300);
+	};
+	oHeader.onmouseenter = function(){
+		clearTimeout(timer);
+		clearTimeout(time);
+	};
+	oHeader.onmouseleave=function(){
+		time=setTimeout(function(){
+			animation(oHeaderList,'height',0);
+		},300);
+	};
 }
 foundList();
 // 搜索框

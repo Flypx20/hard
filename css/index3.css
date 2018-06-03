@@ -24,7 +24,9 @@ a
     color: #b0b0b0;
 }
 
-
+.bug{
+    height: 91px;
+}
 .container{
 	width: 1220px;
 	margin-right: auto;
@@ -467,7 +469,6 @@ body{
 }
 #box .cart .fa-shopping-cart{
 	font-size: 18px;
-
 }
 .header .cart
 {
@@ -516,7 +517,7 @@ body{
     border-radius: 10px;
     border: 1px solid #e5e5e5;
     box-shadow: 0 4px 10px #e5e5e5;
-    z-index: 999;
+    z-index:500000;
     display: none;
 
 }
@@ -648,11 +649,11 @@ body{
     border: 1px solid #93b2f7;
     background: #e5efff;
 }
-.header-nav
+.header .header-nav
 {
     position: absolute;
     z-index: 999;
-    top: 189px;
+    top: 89px;
     right: 0;
 
     overflow: hidden;
@@ -664,13 +665,13 @@ body{
     box-shadow: 0 2px 2px #cacaca;
 }
 
-.header-nav ul{
+.header .header-nav ul{
 	width: 1226px;
 	height: 350px;
 	margin:0 auto;
 	opacity: 0;
 }
-.header-nav ul li
+.header .header-nav ul li
 {
     font-size: 14px;
 
@@ -691,15 +692,15 @@ body{
     border-right: 1px solid #ebebeb;
 }
 
-.header-nav ul li:nth-child(4){
+.header .header-nav ul li:nth-child(4){
 	border-right: none;
 }
-.header-nav ul li img{
+.header .header-nav ul li img{
 	text-align: center;
 	vertical-align: center;
 	padding-right: 40px;
 }
-.header-nav ul li p{
+.header .header-nav ul li p{
 	margin-top: 10px;
     font-size: 14px;
     color: #d44d44;
@@ -707,7 +708,7 @@ body{
     margin-right: 40px;
     box-sizing: border-box;
 }
-.header-nav ul li .produce-name{
+.header .header-nav ul li .produce-name{
     font-size: 12px;
     color: #616161;
 }
