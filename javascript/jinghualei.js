@@ -89,7 +89,7 @@ window.onload = function(){
 				aA[i].index=i;
 				aA[0].className='active';
 				init(0);
-				aA[i].onmouseover = function(){
+				aA[i].onclick = function(){
 					for(var j=0;j<aA.length;j++){
 						aA[j].className='';
 					}
