@@ -1,6 +1,5 @@
 // 刘向明
 	
-window.onload = function(){
 	//抚摸手机时出现的下拉列表
 	(function(w){
 		function shouji(){
@@ -168,7 +167,7 @@ window.onload = function(){
 	daohanglan();
 	gouwuche();
 	zhuti();
-}	
+
 	
 
 
