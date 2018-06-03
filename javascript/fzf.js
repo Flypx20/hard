@@ -166,6 +166,7 @@ function fzfCart(){
 	var oCart = document.querySelector('.top .cart .fa-shopping-cart');
 	var oSpan = document.querySelector('.top .cart span');
 	var oCarts = document.querySelector('.carts');
+	var oBack = document.querySelector('.cart-back');
 	var oCartContent = document.querySelector('.carts .cart-content');
 	var oLittle = document.querySelector('.carts .little');
 	var oCart1 = document.querySelector('#box .cart .fa-shopping-cart');
@@ -174,17 +175,17 @@ function fzfCart(){
 	oSpan.onmouseenter = function(){
 		clearTimeout(time);
 		oCart.style.color = '#fff';
-		oCarts.style.display ='block';
-		animation(oCartContent, {opacity:100});
-		animation(oLittle, {opacity:100});
+		oBack.style.display ='block';
+		animation(oCarts, {opacity:100});
+		//animation(oLittle, {opacity:100});
 	};
 	oSpan.onmouseleave = function(){
 
 		time = setTimeout(function(){
 			oCart.style.color = '#999';
-			animation(oCartContent, {opacity:0});
-			animation(oLittle, {opacity:0});
-			oCarts.style.display ='none';
+			animation(oCarts, {opacity:0});
+			//animation(oLittle, {opacity:0});
+			oBack.style.display ='none';
 
 		},300);
 
@@ -195,9 +196,9 @@ function fzfCart(){
 	oCarts.onmouseleave = function(){
 		time = setTimeout(function(){
 			oCart.style.color = '#999';
-			oCarts.style.display ='none';
-			animation(oCartContent, {opacity:0});
-			animation(oLittle, {opacity:0});
+			oBack.style.display ='none';
+			animation(oCarts, {opacity:0});
+			//animation(oLittle, {opacity:0});
 		},300);
 	};
 }
