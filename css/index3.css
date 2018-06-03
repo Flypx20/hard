@@ -99,14 +99,9 @@ a
     border-radius: 4px;
     background: #fff;
 }
-.cart-back{
-    opacity: 1;
-    background: #fff;
-    display: none;
-}
 .carts{
 	background: #fff;
-    opacity: 1;
+    display: none;
 }
 .header-carts
 {
