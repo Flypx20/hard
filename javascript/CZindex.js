@@ -1,26 +1,31 @@
 window.onload=function(){
-	// navscroll();
-	// function navscroll(){
-	// 	var show=false;
-	// 	window.onscroll=window.onresize=window.onload=function(){
-	// 		var oHead0=document.getElementById('head0');
-	// 		var oSection=document.getElementById('section');
-	// 		var iTop=document.body.scrollTop||document.documentElement.scrollTop;
-	// 		var iHeight=window.innerHeight;
-	// 		if(iTop>140){
-	// 			if(!show){
-	// 				animation(oHead0,{'height':'100'},false);
-	// 				oSection.style.marginTop='150px';
-	// 				show=true;
-	// 			}
-	// 		}else{
-	// 			if(show){
-	// 				animation(oHead0,{'height':'0'},false);
-	// 				oSection.style.marginTop='0px';
-	// 				show=false;
-	// 			}
-	// 		}
-	// 	}
+		/*滚动导航*/
+		(function(w){
+			var isShow=false;
+			window.onscroll=function(){
+			var oNav=document.getElementById('daohang');
+			var oNav1=document.getElementById('daohang1');
+			var oSe=document.getElementById('section');
+			var iTop=document.body.scrollTop||document.documentElement.scrollTop;
+			var iHeight=window.innerHeight;
+				if(iTop>=200){
+					if(!isShow){
+						oNav1.style.top='0px'
+						animation(oNav1,{'height':'100'});
+						isShow=true;
+						oSe.style.marginTop='100px'
+						console.log(2)
+					}
+				}else{
+					if(isShow){
+						animation(oNav1,{'height':'0'});
+						isShow=false;
+						oSe.style.marginTop='0px'
+					}
+					console.log(1)
+				}
+			}
+		})(window);
 		/*购物车*/
 		(function(w){
 				var oCart=document.querySelector('.b2').children[0];
@@ -214,15 +219,15 @@ window.onload=function(){
 			var timer=null;
 			navshouji.onmouseover=function(){
 				clearTimeout(timer);
-				navbox.style.borderTop='1px solid #ccc';
+				// navbox.style.borderTop='1px solid #ccc';
 				animation(navbox,{'height':250},false,function(){
 					loading.style.display='none'
 				})
 			}
 			navshouji.onmouseout=function(){
 				timer=setTimeout(function(){
-					animation(navbox,{'height':1},false,function(){
-					navbox.style.borderTop='none';
+					animation(navbox,{'height':0},false,function(){
+					// navbox.style.borderTop='none';
 					})
 				},500)
 			}
