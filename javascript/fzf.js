@@ -196,9 +196,15 @@ function fzfCart(){
 	oCarts.onmouseleave = function(){
 		time = setTimeout(function(){
 			oCart.style.color = '#999';
+<<<<<<< HEAD
 			oBack.style.display ='none';
 			animation(oCarts, {opacity:0});
 			//animation(oLittle, {opacity:0});
+=======
+			oCarts.style.display ='none';
+			animation(oCartContent, {opacity:0});
+			animation(oLittle, {opacity:0});
+>>>>>>> dev
 		},300);
 	};
 }
