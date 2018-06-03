@@ -41,6 +41,8 @@
 			z-index: 1800;
 			height: 0;
 			overflow: hidden;
+			background-color:#ededed;
+			
 		}
 		.navleft li{
 			width: 50px;
