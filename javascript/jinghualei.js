@@ -161,12 +161,29 @@
 		}
 		w.zhuti=zhuti;
 	})(window);
-
+	//搜索框
+	(function(w){
+		function sousuo(){
+			$('.sousuo input').on('focus',function(){
+				$('.sousuo-box').show();
+				$('.sousuo a').hide();
+				$('.sousuo input').attr('placeholder','请输入搜索的商品')
+				$('.sousuo input').css({opacity:0.2})
+			});
+			$('.sousuo input').on('blur',function(){
+				$('.sousuo-box').hide();
+				$('.sousuo a').show();
+				$('.sousuo input').removeAttr('placeholder','请输入搜索的商品');
+			});
+		}
+		w.sousuo=sousuo;
+	})(window);
 	//得先把函数传到window上，调用时才能找到函数！！！
 	shouji();
 	daohanglan();
 	gouwuche();
 	zhuti();
+	sousuo();
 
 	
 
