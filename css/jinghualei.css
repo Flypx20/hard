@@ -160,7 +160,10 @@
 	background: #ededed;
 	border-bottom: 1px solid #aaa;
 }
-.nav .contain li{
+.nav .contain ul{
+	float: left;
+}
+.nav .contain>ul>li{
 	height: 90px;
 	float: left;
 }
@@ -169,19 +172,124 @@
 }
 .nav .contain li a{
 	line-height: 90px;
-	margin-right: 45px;
+	margin-right: 30px;
 	color: #666;
 	text-decoration: none;
 }
 .nav .contain li a:hover{
 	color: #5079d9;
 }
-.nav1{
+.nav .nav1 .sousuo{
+	margin-top: 29px;
+	width: 380px;
+	height: 32px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 16px;
+	background-color: #fff;
+	float: right;
+	box-shadow: 0 1px 6px rgba(0,0,0,0.05);
 	position: relative;
 }
-/*.nav11{
-	z-index: 99;
-}*/
+.nav .nav1 .sousuo i{
+	font-size: 20px;
+	color: #626262;
+	opacity: 0.5;
+	cursor: pointer;
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	z-index: 10;
+}
+.nav .nav1 .sousuo input{
+	width: 100%;
+    height: 32px;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 40px;
+    color: #333;
+    border: none;
+    outline: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+input:valid {
+    background-color: transparent;
+    box-shadow: none;
+}
+.nav .nav1 .sousuo .a1{
+	width: 70px;
+	text-align: center;
+	color: #3965cc;
+    border: 1px solid #93b2f7;
+    background: #e5efff;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    height: 20px;
+    box-sizing: border-box;
+    font-size: 12px;
+	position: absolute;
+	top:6px;
+	left: 185px;
+	cursor: pointer;	
+}
+.nav .nav1 .sousuo .a2{
+	width: 110px;
+	text-align: center;
+	color: #8aad37;
+    border: 1px solid rgba(138,173,55,.6);
+    background: #f7fae1;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    height: 20px;
+    box-sizing: border-box;
+    font-size: 12px;
+	position: absolute;
+	top:6px;
+	left: 260px;
+	cursor: pointer;	
+}
+.nav .sousuo-box{
+	width: 100%;
+	height: 380px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 10px;
+	background: #fff;
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	z-index: 10;
+	display: none;
+}
+.nav .sousuo-box .sousuo-sanjiao{
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-top: 1px solid rgba(0,0,0,0.2);
+	border-right: 1px solid rgba(0,0,0,0.2);
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	transform:translateY(-7px) rotate(-45deg);
+
+}
+.nav .sousuo-box .sousuo-ul{
+	padding-top: 20px;
+}
+.nav .sousuo-box .sousuo-ul li{
+	padding: 10px 20px;
+    color: #666;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.nav .sousuo-box .sousuo-ul li:hover{
+	color: #5079d9;
+	font-weight: 700;
+}
 /*手机下拉*/
 #shouJ{
 	width: 100%;
